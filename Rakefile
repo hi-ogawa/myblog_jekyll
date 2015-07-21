@@ -1,3 +1,19 @@
+desc 'jekyll server start (locally)'
+task :start do
+  sh 'nohup jekyll serve &> /dev/null &'
+end
+
+desc 'jekyll server stop (locally)'
+task :stop do
+  sh "kill $(ps aux | awk '/[j]ekyll/ {print $2}')"
+end
+
+desc 'show posts'
+task :show do
+  sh 'ls _posts/*'
+end
+
+
 require "rubygems"
 require 'rake'
 require 'yaml'
