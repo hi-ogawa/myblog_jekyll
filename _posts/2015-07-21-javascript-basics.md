@@ -5,8 +5,7 @@ description: ""
 category: 
 tags: [javascript]
 ---
-{% include JB/setup %}
-
+ 
 I've been using Javascript for a few months, but actually I haven't learn this language
 systematically, which means I just put my codes all by intutition and learned what works by
 try and error.

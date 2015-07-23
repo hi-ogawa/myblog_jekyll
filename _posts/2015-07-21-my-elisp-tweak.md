@@ -15,7 +15,7 @@ Here, I put some my own (highly possibly, some other did too) elisp tweaks.
 
 (defun my-insert-checkmark ()
   (interactive)
-  (insert "✓ "))
+  (insert " "))
 
 (defun my-jekyll-open-local ()
   (interactive)
