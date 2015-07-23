@@ -3,7 +3,7 @@ layout: post
 title: "My Elisp Tweaks"
 description: ""
 category: 
-tags: []
+tags: [elisp, emacs]
 ---
 {% include JB/setup %}
 
@@ -38,3 +38,14 @@ Here, I put some my own (highly possibly, some other did too) elisp tweaks.
 	    (local-set-key (kbd "C-c C-h") 'my-jekyll-put-highlight)))
 
 {% endhighlight %}
+
+
+**elisp functions reference**
+
+- shell-command-to-string
+- interctive function definition
+  - read-string
+  - interactive
+  - <http://stackoverflow.com/questions/9646088/emacs-interactive-commands-with-default-value>
+  - <http://www.gnu.org/software/emacs/manual/html_node/elisp/Using-Interactive.html>
+

@@ -1,6 +1,10 @@
+desc 'jekyll server restart (locally)'
+task :restart => [:stop, :start] do
+end
+
 desc 'jekyll server start (locally)'
 task :start do
-  sh 'nohup jekyll serve &> /dev/null &'
+  sh 'nohup jekyll serve --drafts &> /dev/null &'
 end
 
 desc 'jekyll server stop (locally)'

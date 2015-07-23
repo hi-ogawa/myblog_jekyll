@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Javascript Basics"
+title: "Javascript Basics: Core Part"
 description: ""
 category: 
-tags: []
+tags: [javascript]
 ---
 {% include JB/setup %}
 
@@ -24,6 +24,9 @@ For the record, I've not write raw javascrict code since I like the syntax of co
 but I know I have to learn some wierd behaviour comes from javascript basic.
 
 Here, I write some basics I didn't know or what's different from my guess about javascript.
+
+
+
 
 ---
 
