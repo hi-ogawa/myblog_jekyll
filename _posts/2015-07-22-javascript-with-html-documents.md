@@ -28,12 +28,12 @@ and scripts to dynamically access and update the content, structure, and style o
 - all HTML elements are defined as javascript `objects`.
 - you can access values or actions of HTML elements via their objects' `properties`.
 
-{% anchor Q4 %} How does `document` object come?
+<a name='Q4'>Q4</a> How does `document` object come?
 {% highlight javascript %}
 document.getElementById('hoge')
 {% endhighlight %}
 
-{% anchor Q5 %} what the hell is `this`?
+<a name='Q5'>Q5</a> what the hell is `this`?
 {% highlight html %}
 <h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
 {% endhighlight %}
@@ -65,5 +65,6 @@ document.getElementById("header");
 {% endhighlight %}
 
 ### Questions
+
 - [Q4](#Q4): is this answer <http://www.w3schools.com/jsref/dom_obj_document.asp>
 - [Q5](#Q5): 

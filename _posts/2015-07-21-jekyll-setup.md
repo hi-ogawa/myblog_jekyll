@@ -6,8 +6,6 @@ category:
 tags: [jekyll, ruby]
 ---
 
-[anchor jump test](#markdown-mode-in-emacs)
-
 ### blog setup with jekyll bootstrap
 
 - References
@@ -87,8 +85,8 @@ Ideas: ...
 - related files
   - `assets/my_ext/browser_to_emacs.coffee`
   - node project
-  - `_plugins/generator_test.rb` {% anchor Q0 %}
-
+  - `_plugins/generator_test.rb`
+  
 - TODO
   - ? local check mode and publish mode 
   - gather ruby library which i used
@@ -210,4 +208,3 @@ end
 
 Liquid::Template.register_tag('anchor', Jekyll::MyAnchorTag)
 {% endhighlight %}
-
