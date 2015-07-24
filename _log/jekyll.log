@@ -556,3 +556,1099 @@ This selector doesn't have any properties and will not be rendered.
       Regenerating: 1 file(s) changed at 2015-07-25 00:28:10 ...done in 1.354743 seconds.
       Regenerating: 2 file(s) changed at 2015-07-25 00:28:14 ...done in 1.099853 seconds.
       Regenerating: 1 file(s) changed at 2015-07-25 00:28:15 ...done in 1.289244 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:31:05 ...done in 1.153334 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:31:06 ...done in 1.017812 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:31:08 ...done in 1.127426 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:32:43 ...done in 1.032324 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:32:54 ...done in 1.068414 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:32:55 ...done in 1.079707 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:32:56 ...done in 1.133165 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:32:57 ...done in 1.151527 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:32:58 ...done in 1.075938 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:33:20 ...done in 1.040448 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:33:24 ...done in 1.02704 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:33:34 ...done in 1.083886 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:33:38 ...done in 1.021288 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:33:58 ...done in 1.080195 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:34:02 ...done in 1.126257 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:34:03 ...done in 1.081883 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:34:05 ...done in 1.088535 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:35:46 ...done in 1.083895 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:35:47 ...done in 1.056594 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:35:51 ...done in 1.12976 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:35:52 ...done in 1.108526 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:35:53 ...done in 1.093096 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:35:55 ...done in 1.107648 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:36:00 ...done in 1.104967 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:36:07 ...done in 1.071211 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:37:55 ...done in 1.404055 seconds.
+      Regenerating: 13 file(s) changed at 2015-07-25 00:43:39 ...done in 1.307517 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:43:40 ...done in 1.249762 seconds.
+      Regenerating: 15 file(s) changed at 2015-07-25 00:43:41 ...done in 1.076902 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:44:40 ...done in 1.298971 seconds.
+      Regenerating: 50 file(s) changed at 2015-07-25 00:44:41 ...done in 1.115901 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:45:35 ...done in 1.095563 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:45:36 ...done in 1.090016 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:45:41 ...done in 1.047153 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:45:48 ...error:
+[33m             Error: undefined method `attr' for nil:NilClass[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 00:45:53 ...done in 1.030525 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:45:54 ...done in 1.117201 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:05 ...done in 1.082394 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 00:46:06 ...done in 1.018612 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:07 ...done in 1.182271 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:09 ...done in 1.092475 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:11 ...done in 1.09699 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:12 ...done in 1.174249 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:13 ...done in 1.084193 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:18 ...done in 1.05419 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:26 ...done in 1.029981 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:27 ...done in 1.093199 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:32 ...done in 1.07948 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:39 ...done in 1.045069 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:42 ...done in 1.099536 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:44 ...done in 1.049399 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:46:45 ...done in 1.081969 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:46:46 ...done in 1.088957 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:47:04 ...done in 1.081967 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:47:05 ...done in 1.135234 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:47:17 ...done in 1.149198 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:47:18 ...done in 1.352254 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:47:20 ...done in 1.213584 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:48:51 ...done in 1.122601 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:48:52 ...done in 1.13063 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:48:53 ...done in 1.091444 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:49:01 ...done in 1.06834 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:49:02 ...done in 1.106079 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:49:04 ...done in 1.216912 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:49:44 ...done in 1.077414 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:18 ...done in 1.089627 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:29 ...done in 1.061172 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:32 ...done in 1.02968 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:39 ...done in 1.082047 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:47 ...done in 1.032684 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:50:57 ...done in 1.054101 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:51:09 ...done in 1.07851 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:51:10 ...done in 1.03623 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:51:13 ...done in 1.025224 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:51:32 ...done in 1.215204 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:52:00 ...done in 1.185633 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:52:01 ...done in 1.096335 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:52:13 ...done in 1.126788 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:52:45 ...done in 1.336204 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:54:13 ...done in 1.124452 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:54:22 ...done in 1.045935 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:54:23 ...done in 1.04917 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:55:39 ...done in 1.347667 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:55:56 ...done in 1.100809 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:10 ...done in 1.19509 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:11 ...done in 1.149531 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:15 ...done in 1.108885 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:26 ...done in 1.136786 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:27 ...done in 1.117821 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:28 ...done in 1.075506 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:30 ...done in 1.072782 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:33 ...done in 1.015428 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:34 ...done in 1.225107 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:40 ...done in 1.046885 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:41 ...done in 1.099623 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:45 ...done in 1.186224 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:56:47 ...done in 1.119033 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:49 ...done in 1.061326 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:56:55 ...done in 1.30194 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:03 ...done in 1.097417 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:57:04 ...done in 1.074816 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:06 ...done in 1.145954 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:57:08 ...done in 1.203048 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:14 ...done in 1.038539 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:57:15 ...done in 1.342865 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:17 ...done in 1.232134 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:26 ...done in 1.087254 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:57:27 ...done in 1.113305 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:28 ...done in 1.192203 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:57:57 ...done in 1.046388 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:57:59 ...done in 1.058441 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:58:01 ...done in 1.049028 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 00:58:05 ...done in 1.096646 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:58:13 ...done in 1.076817 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 00:58:37 ...done in 1.072597 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 00:58:38 ...done in 1.350569 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:11:19 ...done in 1.543682 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:11:26 ...done in 1.328592 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:28:04 ...done in 1.219132 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:29:01 ...done in 1.451755 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:29:07 ...done in 1.523247 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:29:33 ...done in 1.069844 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:29:34 ...done in 1.107172 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:29:39 ...done in 1.097908 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:29:50 ...done in 1.057309 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:29:52 ...done in 1.036683 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:02 ...done in 1.04572 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:14 ...done in 1.083886 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:28 ...done in 1.072276 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:33 ...done in 1.090769 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:45 ...done in 1.098291 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:30:47 ...done in 1.234452 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:48 ...done in 1.059716 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:30:50 ...done in 1.066534 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:30:51 ...done in 1.136594 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:33:51 ...done in 1.152842 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:35:28 ...done in 1.203633 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:35:29 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.131153 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:35:30 ...done in 1.082578 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:35:31 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 6 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.101581 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:35:33 ...done in 1.144902 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:36:35 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 7 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.222305 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:36:36 ...done in 1.143394 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:46 ...done in 1.050673 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:36:47 ...done in 1.139534 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:49 ...done in 1.066297 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:53 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 6 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.082717 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:36:54 ...done in 1.161212 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:55 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 7 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.11366 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:56 WARNING on line 5 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+WARNING on line 7 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.128384 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:36:57 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "font-size:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "font-size:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 3 file(s) changed at 2015-07-25 01:36:59 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "font-size:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "font-size:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:04 WARNING on line 7 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.101338 seconds.
+      Regenerating: 4 file(s) changed at 2015-07-25 01:37:05 ...done in 1.10465 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:06 ...done in 1.182006 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:09 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "font-size:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "font-size:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:10 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "font-size:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "font-size:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:29 ...done in 1.133821 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:31 ...done in 1.083197 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:32 ...done in 1.086988 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:33 ...done in 1.145865 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:34 ...done in 1.148377 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:37 ...done in 1.145233 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:37:38 ...done in 1.142004 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:37:39 ...done in 1.119386 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:45 ...done in 1.076104 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:37:46 ...done in 1.11818 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:37:48 ...done in 1.115745 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:04 ...done in 1.074714 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:38:05 ...done in 1.05524 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:09 WARNING on line 4 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.11696 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:10 ...done in 1.07331 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:24 ...done in 1.031537 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:25 ...done in 1.133156 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:38:54 ...done in 1.063681 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:38:57 ...done in 1.308562 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:39:26 ...done in 1.292623 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:39:27 ...done in 1.211103 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:39:57 ...done in 1.38066 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:39:59 ...done in 1.329706 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:40:09 ...done in 1.075245 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:40:10 ...done in 1.072272 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:40:12 ...done in 1.379885 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:40:13 ...done in 1.305249 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:40:22 ...done in 1.045894 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:40:23 ...done in 1.099068 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:41:50 ...done in 1.018522 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:41:51 ...done in 1.073937 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:41:59 ...done in 1.10225 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:42:00 ...done in 1.068934 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:42:11 ...done in 1.078327 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:42:13 ...done in 1.111225 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:42:14 ...done in 1.109892 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:42:18 ...done in 1.160737 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:42:21 ...done in 1.239852 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:46:18 ...done in 1.163771 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:46:49 ...done in 1.105364 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:51:31 ...done in 1.172097 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:52:11 ...done in 1.317246 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:52:44 ...done in 1.135621 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:52:46 ...done in 1.044952 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:52:58 ...done in 1.060917 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:53:01 ...done in 1.029633 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:53:29 ...done in 1.083995 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:53:37 ...done in 1.059813 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:53:44 ...done in 1.065217 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:53:45 ...done in 1.066213 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:53:54 ...done in 1.031512 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:53:59 ...done in 1.011444 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:54:00 ...done in 1.172486 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:01 ...done in 1.095821 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:05 ...done in 1.02631 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:20 ...done in 1.593964 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:28 ...done in 1.234881 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:44 ...done in 1.030087 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:54:56 ...done in 1.062275 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:55:53 ...done in 1.140192 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:56:22 ...done in 1.24905 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:56:45 ...done in 1.106053 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:56:59 ...done in 1.169178 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:58:34 ...done in 1.215848 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:58:44 ...done in 1.030283 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:59:24 ...done in 1.032455 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:59:31 ...done in 0.994018 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:59:33 ...done in 1.064251 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 01:59:44 ...done in 1.040693 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:59:45 ...done in 1.086576 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:59:46 ...done in 1.107375 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:59:47 ...done in 1.100345 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 01:59:49 ...done in 1.140994 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 01:59:50 ...done in 1.059803 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:06 ...done in 1.135175 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:07 ...done in 1.075156 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:11 ...done in 1.138203 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:12 ...done in 1.077004 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:14 ...done in 1.090958 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:15 ...done in 1.138157 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:16 ...done in 1.113877 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:18 ...done in 1.156245 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:19 ...done in 1.092164 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:22 ...done in 1.01819 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:30 ...done in 1.070127 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:35 ...done in 1.034285 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:36 ...done in 1.12379 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:37 ...done in 1.177501 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:00:46 ...done in 1.008328 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:00:47 ...done in 1.0389 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:06 ...done in 1.085343 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:19 ...done in 1.031707 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:01:20 ...done in 1.117715 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:21 ...done in 1.112934 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:01:22 ...done in 1.087192 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:24 ...done in 1.118803 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:29 ...done in 1.039336 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:34 ...done in 1.099301 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:37 ...done in 1.130502 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:39 ...done in 1.095147 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:01:40 ...done in 1.157486 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:41 ...done in 1.106645 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:01:45 ...done in 1.093167 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:01:53 ...done in 1.023741 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:02:03 ...done in 1.128344 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:02:22 ...done in 1.581138 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:02:28 ...done in 1.393818 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:20 ...done in 1.159484 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:21 ...done in 1.17758 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:34 ...done in 1.055834 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:35 ...done in 1.083378 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:38 ...done in 1.183345 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:40 ...done in 1.104773 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:41 ...done in 1.076706 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:43 ...done in 1.100222 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:45 ...done in 1.084573 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:46 ...done in 1.11757 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:50 ...done in 0.997271 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:57 ...done in 1.043127 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:03:58 ...done in 1.114047 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:03:59 ...done in 1.073172 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:04 ...done in 1.08574 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:05 ...done in 1.120742 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:06 ...done in 1.164151 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:12 ...done in 1.109137 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:13 ...done in 1.101362 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:16 ...done in 1.119175 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:18 ...done in 1.120405 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:22 ...done in 1.078258 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:23 ...done in 1.151094 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:24 ...done in 1.183803 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:27 ...done in 1.045975 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:04:28 ...done in 1.100976 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:31 ...done in 1.064693 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:38 ...done in 1.081865 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:41 ...done in 1.047597 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:04:42 ...done in 1.298226 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:06:13 ...done in 1.15293 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:06:15 ...done in 1.061404 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:07:01 ...done in 1.092007 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:07:13 ...done in 1.066483 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:07:14 ...done in 1.12833 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:07:20 ...done in 1.033331 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:07:21 ...done in 1.119457 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:07:25 ...done in 1.005235 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:07:26 ...done in 1.074159 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:07:29 ...done in 1.065174 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:07:34 ...done in 1.108853 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:08:41 ...done in 1.238088 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:08:45 ...done in 1.097995 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:08:46 ...done in 1.105324 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:08:48 ...done in 1.184374 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:08:49 ...done in 1.093835 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:08:54 ...done in 1.070541 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:26 ...done in 1.143871 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:32 ...done in 1.066503 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:09:38 ...done in 1.113733 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:40 ...done in 1.065391 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:43 ...done in 1.044037 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:47 ...done in 1.059287 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:09:48 ...done in 1.127646 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:49 ...done in 1.111981 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:54 ...done in 1.135804 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:09:56 ...done in 1.099883 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:09:58 ...done in 1.079908 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:10:00 ...done in 1.073422 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:10:11 ...done in 1.078712 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:10:17 ...done in 1.060094 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:10:39 ...done in 1.170367 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:10:44 ...done in 1.043411 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:10:56 ...done in 1.056765 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:11:00 ...done in 1.085616 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:11:06 ...done in 1.034416 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:11:07 ...done in 1.093581 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:11:10 ...done in 1.357796 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:12:00 ...done in 1.161241 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:12:06 ...done in 1.350786 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:12:25 ...done in 1.274549 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:12:40 ...done in 1.030599 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:12:46 ...done in 1.08346 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:12:49 ...done in 1.094676 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:13:06 ...done in 1.002659 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:13:08 ...done in 1.083396 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:13:37 ...done in 1.029879 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:13:53 ...done in 1.122354 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:13:56 ...done in 1.072606 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:13:58 ...done in 1.088375 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:14 ...done in 1.051537 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:15 ...done in 1.049747 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:21 ...done in 1.101427 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:14:24 ...done in 1.096182 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:26 ...done in 1.054741 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:32 ...done in 1.043902 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:14:33 ...done in 1.089688 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:36 ...done in 1.063739 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:14:38 ...done in 1.103985 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:14:45 ...done in 1.134205 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:14:46 ...done in 1.164421 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:47 ...done in 1.124281 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:49 ...done in 1.103506 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:14:58 ...done in 1.12779 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:14:59 ...done in 1.311455 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:15:19 ...done in 1.090885 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:15:55 ...done in 1.024184 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:16:13 ...done in 1.091007 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:16:15 ...done in 1.159749 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:16:42 ...done in 1.103123 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:16:43 ...done in 1.112499 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:16:44 ...done in 1.191109 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:16:50 ...done in 1.226737 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:16:51 ...done in 1.277367 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:17:04 ...done in 1.063218 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:17:34 ...done in 1.128629 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:17:37 ...done in 1.042751 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:17:41 ...done in 1.042766 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:18:00 ...done in 1.038839 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:18:08 ...done in 1.055595 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:18:09 ...done in 1.126153 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:18:11 ...done in 1.145551 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:18:23 ...done in 1.03187 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:18:43 ...done in 1.324083 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:18:44 ...done in 1.202557 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:20:05 ...done in 1.149422 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:20:06 ...done in 1.068524 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:20:15 ...done in 1.242246 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:20:33 ...done in 1.066071 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:20:34 ...done in 1.241766 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:20:35 ...done in 1.395052 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:21:18 ...done in 1.157821 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:21:19 ...done in 1.319005 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:21:57 ...done in 1.240106 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:21:59 ...done in 1.283447 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:22:04 ...done in 1.235238 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:22:05 ...done in 1.327664 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:24:18 ...done in 1.164398 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:24:19 ...done in 1.138849 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:24:27 ...done in 1.08113 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:24:28 ...done in 1.136425 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:24:42 ...done in 1.111095 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:24:43 ...done in 1.128323 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:25:17 ...done in 1.103522 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:18 ...done in 1.188569 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:25:19 ...done in 1.095683 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:20 ...done in 1.138735 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:25:23 WARNING on line 18 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.089621 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:24 ...done in 1.163686 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:25:31 ...done in 1.106697 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:33 ...done in 1.096001 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:58 ...done in 1.181444 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:25:59 ...done in 1.080228 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:26:56 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "600px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "600px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 02:26:57 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "600px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "600px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:27:06 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 02:27:07 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:27:09 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:27:24 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:30:34 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:30:42 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:30:47 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:32:17 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:32:24 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:32:47 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+...error:
+[33m             Error: Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+            Source: /Users/hiogawa/repositories/github_public/myblog
+       Destination: /Users/hiogawa/repositories/github_public/myblog/_site
+      Generating... 
+[31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"[0m
+jekyll 2.5.3 | Error:  Invalid CSS after "900px": expected expression (e.g. 1px, bold), was ";"
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+            Source: /Users/hiogawa/repositories/github_public/myblog
+       Destination: /Users/hiogawa/repositories/github_public/myblog/_site
+      Generating... 
+WARNING on line 29 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+                    done.
+ Auto-regeneration: enabled for '/Users/hiogawa/repositories/github_public/myblog'
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:35:34 WARNING on line 29 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.124523 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:35:35 ...done in 1.095673 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:36:12 ...done in 1.064099 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:36:13 ...done in 1.075102 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:36:24 ...done in 1.093231 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:36:25 ...done in 1.112796 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:15 ...done in 1.106433 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:37:16 ...done in 1.094547 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:21 ...done in 1.105962 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:22 ...done in 1.127539 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:26 WARNING on line 25 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.27481 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:37:27 ...done in 1.242364 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:43 WARNING on line 25 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 3.683252 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:37:47 ...done in 3.888811 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:42:29 WARNING on line 25 of /Users/hiogawa/repositories/github_public/myblog/_sass/_my-style.sass:
+This selector doesn't have any properties and will not be rendered.
+...done in 1.155193 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:42:30 ...done in 1.102349 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:42:33 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "position:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "position:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 02:42:34 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "position:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "position:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 02:42:40 ...done in 1.132248 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:42:42 ...done in 1.072163 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:42:44 ...done in 1.254927 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:42:45 ...done in 1.185236 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:43:00 ...done in 1.066975 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:43:01 ...done in 1.07233 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:43:21 ...done in 1.337166 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:43:23 ...done in 1.394387 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:43:48 ...done in 1.237467 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:43:49 ...done in 1.169665 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:43:50 ...done in 1.091904 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:43:56 ...done in 1.107421 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:44:47 ...done in 1.034115 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:45:24 ...done in 1.124912 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:45:26 ...done in 1.351086 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:46:37 ...done in 1.144216 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:46:59 ...done in 1.127794 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:47:06 ...done in 1.045867 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:47:23 ...done in 1.213957 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:49:04 ...done in 1.224321 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:50:03 ...done in 1.120508 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:50:22 ...done in 1.045317 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:50:28 ...done in 1.102411 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:50:39 ...done in 1.121103 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:50:57 ...done in 1.052612 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:51:04 ...done in 1.103287 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:51:06 ...done in 1.1592 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:51:07 ...done in 1.489022 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:51:48 ...done in 1.134209 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:51:49 ...done in 1.293933 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:51:51 ...done in 1.723223 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:51:55 ...done in 1.073396 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:05 ...done in 1.256937 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:20 ...done in 1.117415 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:26 ...done in 1.078972 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:41 ...done in 1.270999 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:47 ...done in 1.341357 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:52:51 ...done in 1.317357 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:53:08 ...done in 1.249528 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:31 ...done in 1.098683 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:41 ...done in 1.007397 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:43 ...done in 1.252478 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:49 ...done in 1.114917 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:53:50 ...done in 1.116543 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:52 ...done in 1.350304 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:53:56 ...done in 1.289374 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:53:58 ...done in 1.342861 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:05 ...done in 1.095163 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:54:28 ...done in 1.061064 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:29 ...done in 1.089403 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:31 ...done in 1.047179 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:54:32 ...done in 1.097312 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:36 ...done in 1.05876 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:42 ...done in 1.06433 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:47 ...done in 1.079625 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:54:58 ...done in 1.130586 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:54:59 ...done in 1.16125 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:55:09 ...done in 1.051196 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:55:10 ...done in 1.073271 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:55:17 ...done in 1.046604 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:55:35 ...done in 1.368153 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:55:45 ...done in 1.100889 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:55:46 ...done in 1.241961 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:55:48 ...done in 1.445844 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:56:17 ...done in 1.060852 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:56:33 ...done in 1.097624 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:56:40 ...done in 1.05498 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:56:53 ...done in 1.111554 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 02:56:55 ...done in 1.089304 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:57:16 ...done in 1.155232 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:57:17 ...done in 1.098716 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:57:26 ...done in 1.06555 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:57:33 ...done in 1.113877 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:58:06 ...done in 1.054026 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:58:30 ...done in 1.067777 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:58:31 ...done in 1.098174 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:58:34 ...done in 1.04423 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:58:35 ...done in 1.450189 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:58:37 ...done in 1.296379 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:58:45 ...done in 1.22376 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:58:53 ...done in 1.2401 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:59:01 ...done in 1.308391 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 02:59:51 ...done in 1.3972 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 02:59:53 ...done in 1.319045 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:01:27 ...done in 1.187217 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:01:29 ...done in 1.035717 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:01:33 ...done in 1.079904 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:01:34 ...done in 1.14378 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:01:42 ...done in 1.096619 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:01:45 ...done in 1.198016 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:01:46 ...done in 1.430657 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:02:13 ...done in 1.29687 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:02:14 ...done in 1.300395 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:02:28 ...done in 1.149976 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:02:31 ...done in 1.370411 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:02:32 ...done in 1.272011 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:03:58 ...done in 1.215928 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:04:00 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:01 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:04:02 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:07 ...done in 1.097642 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:04:08 ...done in 1.200428 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:10 ...done in 1.086429 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:04:11 ...done in 1.07993 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:25 ...done in 1.507717 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:26 ...done in 1.208396 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:38 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:04:39 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:04:56 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:05:01 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:05:05 ...done in 1.416339 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:05:07 ...done in 1.269513 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:06:21 ...done in 1.235835 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:06:23 ...done in 1.113998 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:06:24 ...done in 1.605863 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:09:20 ...done in 1.451214 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:09:22 ...done in 1.360355 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:10:20 ...done in 1.139481 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:10:23 ...done in 1.074013 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:10:42 ...done in 1.213831 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:11:09 ...done in 1.323112 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:11:26 ...done in 1.373079 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:11:28 ...done in 1.31801 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:11:33 ...done in 1.12102 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:11:34 ...done in 1.274229 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:12:16 ...done in 1.320909 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:12:56 ...done in 1.718424 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:13:19 ...done in 1.067619 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:13:21 ...done in 1.49803 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:13:22 ...done in 1.467827 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:13:43 ...done in 1.116342 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:13:54 ...done in 1.089935 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:04 ...done in 1.097825 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:14:05 ...done in 1.108824 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:10 ...done in 1.396425 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:14:11 ...done in 1.369602 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:21 ...done in 1.823201 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:14:23 ...done in 1.650023 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:29 ...done in 1.521393 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:14:31 ...done in 1.633007 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:35 ...done in 1.161009 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:37 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$toc-width".[0m
+...error:
+[33m             Error: Undefined variable: "$toc-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 3 file(s) changed at 2015-07-25 03:14:38 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$toc-width".[0m
+...error:
+[33m             Error: Undefined variable: "$toc-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:14:40 ...done in 1.159057 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:14:42 ...done in 1.275458 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:07 ...done in 1.174007 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:15:08 ...done in 1.382859 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:19 ...done in 1.093695 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:20 ...done in 1.235411 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:35 ...done in 1.173934 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:37 ...done in 1.111335 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:15:38 ...done in 1.237004 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:51 ...done in 1.08952 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:15:52 ...done in 1.378003 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:15:56 ...done in 1.408811 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:15:57 ...done in 1.288891 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:16:18 ...done in 1.077873 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:16:30 ...done in 1.06294 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:16:48 ...done in 1.019951 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:16:52 ...done in 1.121012 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:16:53 ...done in 1.312359 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:18:55 ...done in 1.144463 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:02 ...done in 1.135452 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:04 ...done in 1.043149 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:06 ...done in 1.077519 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:19:07 ...done in 1.094807 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:12 ...done in 1.14922 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:23 ...done in 1.093105 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:19:24 ...done in 1.086477 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:31 ...done in 1.151739 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:19:33 ...done in 1.127155 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:52 ...done in 1.397509 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:19:53 ...done in 1.560293 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:21:46 ...done in 1.157246 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:21:48 ...done in 1.030514 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:23:07 ...done in 1.251001 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:23:08 ...done in 1.752016 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:23:39 ...done in 1.202252 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:23:40 ...done in 1.118934 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:25:01 ...done in 1.730649 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:25:03 ...done in 1.626601 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:25:14 ...done in 1.546883 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:25:16 ...done in 1.653518 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:25:31 ...done in 1.114852 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:25:32 ...done in 1.128628 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:25:36 ...done in 1.857354 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:25:38 ...done in 1.547741 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:26:11 ...done in 1.12382 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:26:12 ...done in 1.075041 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:26:16 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$toc-left".[0m
+...error:
+[33m             Error: Undefined variable: "$toc-left".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:26:17 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$toc-left".[0m
+...error:
+[33m             Error: Undefined variable: "$toc-left".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:26:20 ...done in 1.446202 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:26:21 ...done in 1.486745 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:26:48 ...done in 1.127294 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:26:49 ...done in 1.14123 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:26:51 ...done in 1.093633 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:26:53 ...done in 1.306751 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:26:54 ...done in 1.386777 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:27:04 ...done in 1.098546 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:27:05 ...done in 1.213169 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:27:06 ...done in 1.513294 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:27:44 ...done in 1.46964 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:27:45 ...done in 1.034644 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:27:54 ...done in 0.982221 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:27:55 ...done in 1.005579 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:28:08 ...done in 1.160622 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:28:09 ...done in 1.241838 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:28:23 ...done in 0.94469 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:28:32 ...done in 1.154325 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:29:01 ...done in 1.069418 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:29:02 ...done in 0.951551 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:29:04 ...done in 1.119439 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:29:19 ...done in 0.953982 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:30:13 ...done in 1.10352 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:30:39 ...done in 1.112692 seconds.
+      Regenerating: 3 file(s) changed at 2015-07-25 03:30:43 ...done in 1.374353 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:30:44 ...done in 1.295525 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:31:28 ...done in 1.68678 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:31:30 ...done in 1.519852 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:34:21 ...done in 1.778321 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:34:23 ...done in 1.514917 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:34:50 ...done in 1.086673 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:34:59 ...done in 1.125625 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:35:11 ...done in 1.095865 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:35:12 ...done in 1.395875 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:35:32 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "margin-left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "margin-left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:35:33 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid property: "margin-left:" (no value).[0m
+...error:
+[33m             Error: Invalid property: "margin-left:" (no value).[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:35:42 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "$container-width +": expected expression (e.g. 1px, bold), was ""[0m
+...error:
+[33m             Error: Invalid CSS after "$container-width +": expected expression (e.g. 1px, bold), was ""[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:35:46 ...done in 1.338767 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:35:48 ...done in 1.184549 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:36:01 ...done in 1.436022 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:36:02 ...done in 1.298957 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:36:27 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid variable: "$toc-".[0m
+...error:
+[33m             Error: Invalid variable: "$toc-".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:36:28 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid variable: "$toc-".[0m
+...error:
+[33m             Error: Invalid variable: "$toc-".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:36:33 ...done in 1.112153 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:36:34 ...done in 1.092 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:36:39 ...done in 1.265534 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:36:41 ...done in 1.220057 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:11 ...done in 1.115228 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:37:12 ...done in 1.100049 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:16 ...done in 1.123556 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:37:17 ...done in 1.149105 seconds.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:36 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:38 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 4 file(s) changed at 2015-07-25 03:37:39 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:37:40 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:46 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:37:48 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:37:58 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:38:18 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "...nt-wrap-width +": expected expression (e.g. 1px, bold), was ""[0m
+...error:
+[33m             Error: Invalid CSS after "...nt-wrap-width +": expected expression (e.g. 1px, bold), was ""[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:38:19 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "...nt-wrap-width +": expected expression (e.g. 1px, bold), was ""[0m
+...error:
+[33m             Error: Invalid CSS after "...nt-wrap-width +": expected expression (e.g. 1px, bold), was ""[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:38:26 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$whole-width".[0m
+...error:
+[33m             Error: Undefined variable: "$whole-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:38:27 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$whole-width".[0m
+...error:
+[33m             Error: Undefined variable: "$whole-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:38:45 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:38:47 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 3 file(s) changed at 2015-07-25 03:38:48 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:38:49 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:39:03 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:39:04 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:39:50 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:39:51 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:00 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:27 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:37 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:41:38 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:41 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:50 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:41:51 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:41:53 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:41:56 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:41:57 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:43:33 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:43:35 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:44:30 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:44:32 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:45:05 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:45:06 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$container-width".[0m
+...error:
+[33m             Error: Undefined variable: "$container-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:46:23 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$containt-width".[0m
+...error:
+[33m             Error: Undefined variable: "$containt-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:46:24 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$containt-width".[0m
+...error:
+[33m             Error: Undefined variable: "$containt-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:46:25 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$containt-width".[0m
+...error:
+[33m             Error: Undefined variable: "$containt-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+            Source: /Users/hiogawa/repositories/github_public/myblog
+       Destination: /Users/hiogawa/repositories/github_public/myblog/_site
+      Generating... 
+[31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$containt-width".[0m
+jekyll 2.5.3 | Error:  Undefined variable: "$containt-width".
+      Regenerating: 1 file(s) changed at 2015-07-25 03:47:10 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Undefined variable: "$containt-width".[0m
+...error:
+[33m             Error: Undefined variable: "$containt-width".[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 3 file(s) changed at 2015-07-25 03:47:13 ...done in 1.073919 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:47:15 ...done in 1.102938 seconds.
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+            Source: /Users/hiogawa/repositories/github_public/myblog
+       Destination: /Users/hiogawa/repositories/github_public/myblog/_site
+      Generating... 
+                    done.
+ Auto-regeneration: enabled for '/Users/hiogawa/repositories/github_public/myblog'
+Configuration file: /Users/hiogawa/repositories/github_public/myblog/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+      Regenerating: 2 file(s) changed at 2015-07-25 03:49:15 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "$toc-width": expected expression (e.g. 1px, bold), was ";;"[0m
+...error:
+[33m             Error: Invalid CSS after "$toc-width": expected expression (e.g. 1px, bold), was ";;"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 1 file(s) changed at 2015-07-25 03:49:16 [31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':[0m
+[31m                    Invalid CSS after "$toc-width": expected expression (e.g. 1px, bold), was ";;"[0m
+...error:
+[33m             Error: Invalid CSS after "$toc-width": expected expression (e.g. 1px, bold), was ";;"[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+      Regenerating: 2 file(s) changed at 2015-07-25 03:49:27 ...done in 1.097923 seconds.
+      Regenerating: 1 file(s) changed at 2015-07-25 03:49:28 ...done in 1.087486 seconds.

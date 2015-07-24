@@ -8,7 +8,8 @@ desc 'server start (locally)'
 task :start, [:arg] do |t, args|
   case args[:arg]
   when 'jekyll'
-    sh 'nohup jekyll serve --drafts >> ./_log/jekyll.log 2>&1 &'
+    # sh 'nohup jekyll serve --drafts >> ./_log/jekyll.log 2>&1 &'
+    sh 'jekyll serve --drafts &'
   when 'node'
     sh 'nohup node_modules/.bin/node_test_emacs_jump_app 4010 >> ./_log/node.log 2>&1 &'
   else 

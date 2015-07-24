@@ -1,14 +1,32 @@
 body, h1, h2, h3, h4, h5, h6
   font-family: "Comic Sans MS", cursive, sans-serif
 
+h1
+  font-size: 27px
+h2
+  font-size: 25px
+h3
+  font-size: 23px
 
-.container
-  max-width: 900px
+
+$content-wrap-width:  800px
+$toc-width:           350px
+$toc-left:            20px
+$whole-width:         $content-wrap-width + $toc-width + $toc-left
+
+.content-wrap
+  margin-right: $toc-left + $toc-width
+  width: $content-wrap-width
   .page-header
     h1
       display: inline
-    
- 
-@include media-query($on-palm)
-  .container-right-side
+  @include media-query($whole-width)
+    margin: auto
+    width: auto
+
+.right-side-pane-for-toc
+  position: fixed
+  margin-left: $content-wrap-width + $toc-left
+  width: $toc-width
+  @include media-query($whole-width)
     display: none

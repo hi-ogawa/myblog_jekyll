@@ -17,7 +17,7 @@ Here are some files and configurations you need to set:
 
 I will explain how they are working together.
 
-#### 1. _Emacs to Chrome_:
+### _Emacs to Chrome_:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
   - creates a sync file at `_sync/postname.md.json`, which is looked up
@@ -28,7 +28,7 @@ I will explain how they are working together.
 - Applescript: `smart_jump_to_chrome.scpt`
   - This is invokes by the previous elisp shortcut.
 
-#### 2. _Chrome to Emacs_:
+### _Chrome to Emacs_:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
   - converts markdown header notation (like `### something`) in post.md files
@@ -40,7 +40,7 @@ I will explain how they are working together.
 - JavaScript assets: `assets/my_ext/browser_to_emacs.js`
   - Click on headers invokes a POST request to localhost:4010.
 
-### References to implement those programs
+## References to implement those programs
 
 - Node.js: see [this post]({% post_url 2015-07-23-node-js-tutorial %}) for the detail.
 - Elisp
