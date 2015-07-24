@@ -2,36 +2,24 @@
   "url": "/2015/07/23/node-js-tutorial",
   "jump": [
     {
-      "id": "what-i-need-to-do-with-this-nodejs-program",
-      "lineno": 9
+      "id": "what-i-learned-and-references",
+      "lineno": 16
     },
     {
-      "id": "following-a-tutorial",
-      "lineno": 17
+      "id": "how-my-package-works",
+      "lineno": 48
     },
     {
-      "id": "misc",
-      "lineno": 20
+      "id": "installation",
+      "lineno": 50
     },
     {
-      "id": "make-a-package-module",
-      "lineno": 28
+      "id": "usage",
+      "lineno": 56
     },
     {
-      "id": "class-notation-by-coffeescript",
-      "lineno": 36
-    },
-    {
-      "id": "convienience-in-emacs",
-      "lineno": 41
-    },
-    {
-      "id": "nodejs-with-coffeescript",
-      "lineno": 46
-    },
-    {
-      "id": "references",
-      "lineno": 59
+      "id": "future-study",
+      "lineno": 70
     }
   ]
 }

@@ -45,7 +45,7 @@ tags: [jekyll, ruby]
 
 ## Syncing between Emacs and Chrome
 
-Files:
+New files and configuration:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
   - This converts markdown header notation (like `### something`) in post.md files
@@ -63,12 +63,13 @@ Files:
 - Npm package: `node_test`
   - `./bin/executable.js 4010` monitors a POST request at localhost:4010.
   - Upon a request, run `emacsclient` command with appropriate options given from POST data.
+  - see the detail at [this post]({% post_url 2015-07-23-node-js-tutorial %}).
 
 - Jekyll js assets: `assets/my_ext/browser_to_emacs.js`
   - Click on headers invokes a POST request to localhost:4010.
 
-- TODO
-  - how to change the interval invoking generator plugin?
+- Excludes `_sync` folder from the jekyll auto watch list.
+  - put `exclude: [ ..., "_sync", "node_module"]` in `_config.yml`
 
 ### Move from Emacs to Chrome
 
