@@ -64,6 +64,7 @@ like this:
 
 
 ### Future work
+
 - how could I find out `windows` is an available property which is not on scripting dictionaries?
   - I think I need to go through [this article](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/) by apple.
 - Create jump feature much more like TeX-PDF sync.
@@ -71,6 +72,7 @@ like this:
 
 
 #### applescript/javascript references
+
 - <https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/>
 - <http://www.macstories.net/tutorials/getting-started-with-javascript-for-automation-on-yosemite/>
 - <http://developer.telerik.com/featured/javascript-os-x-automation-example/>

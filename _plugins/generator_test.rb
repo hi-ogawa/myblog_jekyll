@@ -2,7 +2,8 @@ module Reading
   class Generator < Jekyll::Generator
     def generate(site)
 
-      return true unless site.show_drafts
+      return unless site.show_drafts
+
 
       require 'json'
       require 'pathname'
@@ -17,17 +18,15 @@ module Reading
         lineno = original_file_content.split(/\n/).index(first_line) + 1
 
         edited_content = ""   # header tagged content
-        # h = {}                # header line number hash
-        h = []
+        h = []                # header line number hash
 
-        f = File.open(local_root.join('sync', p.name + '.json'), 'w')
+        f = File.open(local_root.join('_sync', p.name + '.json'), 'w')
 
         p.content.each_line.map(&:chomp).each do |l|
           if l =~ /^#/
-            puts "#{lineno.to_s} \t #{l}"
             edited_content += l + "\n" + jump_tag(lineno, local_root.join(p.path).to_s) + "\n"
-            id   = l.gsub(/[^\w]+/,'-').gsub(/(\_)|(^\-*)|(\-*$)/, '').downcase
-            h.push [id, lineno]
+            anchor = make_anchor l
+            h.push({id: anchor, lineno: lineno})
           else 
             edited_content += l + "\n"
           end
@@ -35,10 +34,17 @@ module Reading
         end
 
         f.write JSON.pretty_generate({url: p.url, jump: h}) # write json
-        f.close
         p.content = edited_content      # update post content
       end
 
+    end
+
+    def make_anchor(line)
+      require 'kramdown'  # site.config['markdown'] == 'kramdown' by default
+      require 'nokogiri'
+
+      Nokogiri::HTML(Kramdown::Document.new(line).to_html)
+        .css('h1, h2, h3, h4, h5, h6').first.attr('id')
     end
 
     def jump_tag(lineno, path)
