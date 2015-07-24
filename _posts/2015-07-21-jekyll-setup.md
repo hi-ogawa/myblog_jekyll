@@ -29,12 +29,6 @@ tags: [jekyll, ruby]
 - make the width of all pages smaller
 - not only jump to header, but also anything
 
-### Misc
-
-- access post yaml front matter: `site.posts[0].data`
-- access site configuration in _config.yml: `site.config`
-- check if draft mode (jekyll build/serve --drafts): `site.show_drafts`
-
 ### Markdown-mode in Emacs
 
 - C-c C-n: go to next visible header
@@ -42,6 +36,39 @@ tags: [jekyll, ruby]
 - see [this post]({% post_url 2015-07-21-my-elisp-tweak %})
 
 - make todo work cycler
+
+### Misc
+
+- access post yaml front matter: `site.posts[0].data`
+- access site configuration in _config.yml: `site.config`
+- check if draft mode (jekyll build/serve --drafts): `site.show_drafts`
+
+## Syncing between Emacs and Chrome
+
+Files:
+
+- Jekyll plugin: `_plugins/generator_test.rb`
+  - This converts markdown header notation (like `### something`) in post.md files
+	into an oridinary header tag with additional attributes data, which is checked
+	by the below `browser_to_emacs.js`.
+  - This creates sync file at `_sync/postname.md.json`, which is looked up by
+	the next elisp function.
+
+- Elisp: `~/.emacs.d/init.el`
+  - `C-c C-l` in post.md
+
+- Applescript: `smart_jump_to_chrome.scpt`
+  - This is invokes by elisp via `(shell-command)` function.
+
+- Npm package: `node_test`
+  - `./bin/executable.js 4010` monitors a POST request at localhost:4010.
+  - Upon a request, run `emacsclient` command with appropriate options given from POST data.
+
+- Jekyll js assets: `assets/my_ext/browser_to_emacs.js`
+  - Click on headers invokes a POST request to localhost:4010.
+
+- TODO
+  - how to change the interval invoking generator plugin?
 
 ### Move from Emacs to Chrome
 
