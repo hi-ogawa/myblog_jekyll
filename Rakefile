@@ -1,15 +1,31 @@
-desc 'jekyll server restart (locally)'
-task :restart => [:stop, :start] do
+desc 'server restart (locally)'
+task :restart, [:arg] do |t, args|
+  Rake::Task['stop'].execute(args)
+  Rake::Task['start'].execute(args)
 end
 
-desc 'jekyll server start (locally)'
-task :start do
-  sh 'nohup jekyll serve --drafts &> /dev/null &'
+desc 'server start (locally)'
+task :start, [:arg] do |t, args|
+  case args[:arg]
+  when 'jekyll'
+    sh 'nohup jekyll serve --drafts >> ./_log/jekyll.log 2>&1 &'
+  when 'node'
+    sh 'nohup node_modules/.bin/node_test_emacs_jump_app 4010 >> ./_log/node.log 2>&1 &'
+  else 
+    puts 'give me an argument properly'
+  end
 end
 
-desc 'jekyll server stop (locally)'
-task :stop do
-  sh "kill $(ps aux | awk '/[j]ekyll/ {print $2}')"
+desc 'server stop (locally)'
+task :stop , [:arg] do |t, args|
+  case args[:arg]
+  when 'jekyll'
+    sh "kill  $(ps aux | awk '/[j]ekyll/ {print $2}')"
+  when 'node'
+    sh "kill  $(ps aux | awk '/[n]ode_test_emacs_jump_app/ {print $2}')"
+  else 
+    puts 'give me an argument properly'
+  end
 end
 
 desc 'show posts'

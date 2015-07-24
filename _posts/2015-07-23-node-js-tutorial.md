@@ -3,7 +3,7 @@ layout: post
 title: "Node.js Tutorial"
 description: ""
 category: 
-tags: []
+tags: [node.js, javascript]
 ---
 
 I followed some node.js tutorials out there.
@@ -23,8 +23,8 @@ so the npm package has a lot of things which don't make sense itself.
   - call a shell command
 	- <https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback>
 	- <http://stackoverflow.com/questions/12941083/get-the-output-of-a-shell-command-in-node-js>
-  - get a command line arguments in nodejs executable file
-	- <https://nodejs.org/docs/latest/api/process.html#process_process_argv>
+  - get a command line arguments in nodejs executable file: <https://nodejs.org/docs/latest/api/process.html#process_process_argv>
+  - read a json file: <http://stackoverflow.com/questions/10011011/using-node-js-how-do-i-read-a-json-object-into-server-memory>
 - Make and publish an npm package
   - very nice guide: <http://nickdesaulniers.github.io/blog/2013/08/28/making-great-node-dot-js-modules-with-coffeescript/>
   - parameters in package.json: <https://docs.npmjs.com/files/package.json>
