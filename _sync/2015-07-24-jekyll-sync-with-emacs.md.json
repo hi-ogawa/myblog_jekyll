@@ -2,24 +2,24 @@
   "url": "/2015/07/24/jekyll-sync-with-emacs",
   "jump": [
     {
+      "id": "new-files-and-setting",
+      "lineno": 9
+    },
+    {
       "id": "emacs-to-chrome",
-      "lineno": 20
+      "lineno": 22
     },
     {
       "id": "chrome-to-emacs",
-      "lineno": 31
+      "lineno": 33
     },
     {
       "id": "references-to-implement-those-programs",
-      "lineno": 43
-    },
-    {
-      "id": "move-from-chrome-to-emacs",
-      "lineno": 82
+      "lineno": 47
     },
     {
       "id": "future-work",
-      "lineno": 96
+      "lineno": 87
     }
   ]
 }

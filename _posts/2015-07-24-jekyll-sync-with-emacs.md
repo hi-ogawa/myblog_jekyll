@@ -6,6 +6,8 @@ category:
 tags: [jekyll, ruby, elisp, applescript, node.js, javascript]
 ---
 
+# New Files and Setting
+
 Here are some files and configurations you need to set:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
@@ -17,7 +19,7 @@ Here are some files and configurations you need to set:
 
 I will explain how they are working together.
 
-### _Emacs to Chrome_:
+## Emacs to Chrome:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
   - creates a sync file at `_sync/postname.md.json`, which is looked up
@@ -28,19 +30,21 @@ I will explain how they are working together.
 - Applescript: `smart_jump_to_chrome.scpt`
   - This is invokes by the previous elisp shortcut.
 
-### _Chrome to Emacs_:
+## Chrome to Emacs:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
   - converts markdown header notation (like `### something`) in post.md files
 	into an oridinary header tag with additional attributes, which is checked
 	by the next `browser_to_emacs.js`.
 - Node package: `node_test_emacs_jump`
-  - `./bin/executable.js 4010` monitors a POST request at localhost:4010.
+  - install the package by `npm install node_test_emacs_jump`
+  - `node_modules/.bin/node_test_emacs_jump_app 4010` monitors a POST request at localhost:4010.
   - upon a request, run `emacsclient` command with appropriate options given from POST data.
 - JavaScript assets: `assets/my_ext/browser_to_emacs.js`
-  - Click on headers invokes a POST request to localhost:4010.
+  - Click on headers invokes a POST request to localhost:4010 with data consisting of
+	the line number in original md file.
 
-## References to implement those programs
+# References to implement those programs
 
 - Node.js: see [this post]({% post_url 2015-07-23-node-js-tutorial %}) for the detail.
 - Elisp
@@ -79,20 +83,7 @@ I will explain how they are working together.
   - write json in a file: <http://stackoverflow.com/questions/5507512/write-to-json-file-in-correct-format-ruby>
   - regular expression <http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm>
 
-### Move from Chrome to Emacs
 
-- Open server process locally, which monitors a request, like localhost:4010.
-- When click happens on a header in a jekyll post, that triggers a javascript function,
-  which send a request to localhost:4010 with data consisting of
-  the id attribute of the header
-- Then, after the server calculates the location of a header in the original markdown file,
-  it runs a command `emacsclient` with a line number.
-- To realize this, I have to find a way to put Javascript code in jekyll posts.
-  - put `<script src="/assets/my_ext/browser_to_emacs.js"></script>` around the bottom of
-	`_includes/themes/bootstrap-3/default.html` after including jQuery.
-  - put the below code in `assets/my_ext/browser_to_emacs.js`
-	(this is an original coffeescript):
-
-### Future Work
+# Future Work
 
 - don't add attributes when it's in syntax highlight mode

@@ -8,11 +8,11 @@ tags: []
 {% include JB/setup %}
 
 
-### References
+# References
 
 - [Programming Ruby](http://ruby-doc.com/docs/ProgrammingRuby/html/index.html)
 
-### Misc
+# Misc
 
 - switch statement
   - <http://ruby-doc.com/docs/ProgrammingRuby/html/tut_expressions.html#S5>
