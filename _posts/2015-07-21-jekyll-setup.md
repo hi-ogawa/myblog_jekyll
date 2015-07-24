@@ -45,6 +45,7 @@ I used this <https://github.com/dafi/tocmd-generator>.
 
 - Basic Install:
   - `git clone git@github.com:dafi/tocmd-generator.git` in `assets`
+  -	(if you will publish the blog on github page, you should remove `.git` file.)
   - in the file `_includes/themes/bootstrap-3/default.html`, add these lines:
     - `<link href="/assets/tocmd-generator/css/toc.css" rel="stylesheet">`
     - `<script src="/assets/tocmd-generator/js/jquery.toc.js"></script>`
@@ -84,6 +85,7 @@ $('.left-side-pane-for-toc').prepend(replacedTocContainer); // add this
     /* font-size: 95%; */
     font-size: 90%;
 {% endhighlight %}
+
 # References
 
 - Original: <http://jekyllrb.com/docs/home/>

@@ -15,27 +15,27 @@
     },
     {
       "id": "references",
-      "lineno": 87
+      "lineno": 89
     },
     {
       "id": "markdown-mode-in-emacs",
-      "lineno": 92
+      "lineno": 94
     },
     {
       "id": "how-to-get-syntax-highlight-work-in-jekyll",
-      "lineno": 99
+      "lineno": 101
     },
     {
       "id": "taking-tagbox-style-from-jekyll-bootstrap",
-      "lineno": 123
+      "lineno": 125
     },
     {
       "id": "short-language-names-for-highlight-tag",
-      "lineno": 162
+      "lineno": 164
     },
     {
       "id": "write-my-own-jekyll-tag",
-      "lineno": 167
+      "lineno": 169
     }
   ]
 }
