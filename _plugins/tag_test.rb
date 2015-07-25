@@ -31,18 +31,30 @@ module Jekyll
 
     def render(context)
       h = JSON.parse @text
+
+      filename = h["url"].match(/\/([^\/]*)$/)[1]
+
       open(h["url"].sub("/blob/","/raw/")) do |f|
         source = f.read
         use_lines = source.split("\n")[(h["start"] - 1)..(h["end"] - 1)]
         code = use_lines.inject {|ls, l| ls + "\n" + l}
 
         output = <<-CODE
+
+<div    style='background: #e8e8e8; width: 100%;'> &nbsp;
+  <span class='toggle-snippet' style='cursor: pointer;'>  &#43; </span>
+  <span style='position: absolute; left:  40px;' >                  #{filename}       </span>
+  <span style='position: absolute; right: 30px;' > <a href='#{h["url"]}'>  view </a>  </span>
+</div>
+
 <?prettify lang=#{ h["lang"] }?>
 <pre>
 #{ code }
 </pre>
+
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <script src="/assets/code-prettify/src/lang-#{ h["lang"] }.js"></script>
+
 CODE
         output
       end

@@ -9,6 +9,10 @@ module Reading
       require 'pathname'
 
       local_root = Pathname.new(site.config['local_root'])
+      
+      # make sure the directory for sync files exists
+      require 'fileutils'
+      FileUtils.mkdir_p local_root.join('_sync')
 
       site.posts.each do |p|
 
@@ -20,6 +24,7 @@ module Reading
         edited_content = ""   # header tagged content
         h = []                # header line number hash
 
+        
         f = File.open(local_root.join('_sync', p.name + '.json'), 'w')
 
         p.content.each_line.map(&:chomp).each do |l|
