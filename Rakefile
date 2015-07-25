@@ -1,3 +1,13 @@
+desc 'publish blog'
+task :publish do
+  sh 'jekyll build -d ../myblog_io'
+  Dir.chdir('../myblog_io') do
+    sh 'git add -A'
+    sh "git ci -m 'blog update'"
+    sh 'git push origin master'
+  end
+end
+
 desc 'server restart (locally)'
 task :restart, [:arg] do |t, args|
   Rake::Task['stop'].execute(args)

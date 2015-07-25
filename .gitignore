@@ -11,3 +11,7 @@ Thumbs.db
 
 node_modules/*
 _log/*
+
+_drafts/keep-myself.md
+.sass-cache/*
+_sync/*
