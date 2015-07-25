@@ -38,6 +38,9 @@ module Jekyll
         source = f.read
         use_lines = source.split("\n")[(h["start"] - 1)..(h["end"] - 1)]
         code = use_lines.inject {|ls, l| ls + "\n" + l}
+        
+        require 'cgi'
+        code_escaped = CGI.escapeHTML code
 
         output = <<-CODE
 
@@ -47,15 +50,15 @@ module Jekyll
   <span style='position: absolute; right: 30px;' > <a href='#{h["url"]}'>  view </a>  </span>
 </div>
 
-<?prettify lang=#{ h["lang"] }?>
-<pre>
-#{ code }
+<pre class='prettyprint lang-#{ h["lang"] }'>
+#{ code_escaped }
 </pre>
 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <script src="/assets/code-prettify/src/lang-#{ h["lang"] }.js"></script>
 
 CODE
+        puts output
         output
       end
     end
@@ -63,3 +66,5 @@ CODE
 end
 
 Liquid::Template.register_tag('github', Jekyll::MyGithubSnippetTag)
+
+# <?prettify lang=#{ h["lang"] }?>
