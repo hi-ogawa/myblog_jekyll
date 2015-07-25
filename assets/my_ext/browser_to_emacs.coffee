@@ -1,11 +1,11 @@
 $ ->
 
-  # for compatibility with toc-generator
+  # for compatibility with toc-generator (to get emacs-to-chrome jump work)
   $('.content h1,h2').each ->
     # put a fake anchor at the top of each header
     $(this).before $('<span>').attr('id', $(this).attr('id'))
 
-  $('.content h1,h2,h3,h4,h5,h6').click ->
+  $('.content-wrap h1,h2,h3,h4,h5,h6').click ->
     $jumpTag = $(this).next().children('p > span')
     data =
         sender: 'chrome'

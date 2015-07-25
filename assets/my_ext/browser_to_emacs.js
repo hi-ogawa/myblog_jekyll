@@ -4,7 +4,7 @@
     $('.content h1,h2').each(function() {
       return $(this).before($('<span>').attr('id', $(this).attr('id')));
     });
-    return $('.content h1,h2,h3,h4,h5,h6').click(function() {
+    return $('.content-wrap h1,h2,h3,h4,h5,h6').click(function() {
       var $jumpTag, data;
       $jumpTag = $(this).next().children('p > span');
       data = {
