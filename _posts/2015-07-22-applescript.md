@@ -1,19 +1,17 @@
 ---
 layout: post
-title: "Applescript with Javascript"
+title: "? Applescript with Javascript"
 description: ""
 category: 
 tags: [javascript, applescript, btt]
 ---
 {% include JB/setup %}
 
-### How to open a dictionary for certain application.
+# How to Open a Dictionary for Certain Application
 
 <img src='/assets/images/applescript0.gif' width='600' height='auto'>
 
----
-
-### Example: Running Javascript on Safari/GoogleChrome
+# Example: Running Javascript on Safari/GoogleChrome
 <img src='/assets/images/applescript1.png' width='800' height='auto'>
 
 {% highlight javascript %}
@@ -30,9 +28,7 @@ var safari = Application('Safari')
 safari.doJavaScript('alert("Hello!")', { in: safari.windows[0].currentTab })
 {% endhighlight %}
 
----
-
-### Jumping shortcut from chrome to Emacs
+### Jumping Shortcut from Chrome to Emacs
 
 Consulting with these two example of applescript,
 
@@ -63,7 +59,7 @@ like this:
 <img src='/assets/images/applescript2.png' width='600' height='auto'>
 
 
-### Future work
+# Future work
 
 - how could I find out `windows` is an available property which is not on scripting dictionaries?
   - I think I need to go through [this article](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/) by apple.
@@ -71,7 +67,7 @@ like this:
   - how to keep line number and position (it seems possible).
 
 
-#### applescript/javascript references
+# applescript/javascript references
 
 - <https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/>
 - <http://www.macstories.net/tutorials/getting-started-with-javascript-for-automation-on-yosemite/>

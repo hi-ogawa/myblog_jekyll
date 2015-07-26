@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript Basics: Interaction with HTML Documents"
+title: "? Javascript Basics: Interaction with HTML Documents"
 description: ""
 category: 
 tags: [javascript]
@@ -18,9 +18,8 @@ I always be with jQuery.
 But, sometimes I'm in trouble whether I'm using jQuery or primitives in javascript.
 I hope this study could help me out that kind of troubles.
 
----
 
-### DOM (Document Object Model)
+# DOM (Document Object Model)
 
 This is a W3C standard which defines interface that allows programs
 and scripts to dynamically access and update the content, structure, and style of a document.
@@ -40,7 +39,7 @@ document.getElementById('hoge')
 
 - complete HTML DOM events list: <http://www.w3schools.com/jsref/dom_obj_event.asp>
 
-### Event propagation
+## Event propagation
 
 - _bubbling_:  from inner most element's event to the outer one. (this is default behaviour.)
 - _capturing_: from outer most element's event to the inner one.
@@ -49,7 +48,7 @@ document.getElementById('hoge')
 
 
 
-### BOM (Browser Object Model)
+# BOM (Browser Object Model)
 
 > The `window` object is supported by all browsers. It represents the browser's window.
  All global JavaScript objects, functions, and variables automatically become members
@@ -64,7 +63,7 @@ window.document.getElementById("header");
 document.getElementById("header");
 {% endhighlight %}
 
-### Questions
+# Questions
 
 - [Q4](#Q4): is this answer <http://www.w3schools.com/jsref/dom_obj_document.asp>
 - [Q5](#Q5): 

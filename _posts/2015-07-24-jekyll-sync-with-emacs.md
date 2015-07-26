@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll Plugin for Syncing Between Emacs and Chrome"
+title: "? Jekyll Plugin for Syncing Between Emacs and Chrome"
 description: ""
 category: 
 tags: [jekyll, ruby, elisp, applescript, node.js, javascript]
@@ -12,23 +12,28 @@ Here are some files and configurations you need to set:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
 - Elisp: `~/.emacs.d/init.el`
+{% github {"url": "https://github.com/hi-ogawa/emacs-customization/blob/2e23b7cb033da922bdd56f41a75ae561699b657c/init.el", "start": 320, "end": 355, "lang": "lisp"} %}
+
 - Applescript: `smart_jump_to_chrome.scpt`
 - Node package: `node_test_emacs_jump`
 - JavaScript assets: `assets/my_ext/browser_to_emacs.js`
 - Put `exclude: [ ..., "_sync", "node_module"]` in `_config.yml`
+
+
 
 I will explain how they are working together.
 
 ## Emacs to Chrome:
 
 - Jekyll plugin: `_plugins/generator_test.rb`
-  - creates a sync file at `_sync/postname.md.json`, which is looked up
-	by the next elisp function.
+  - creates a sync file at `_sync/post.md.json`, which includes a post url and
+	json object associatesa line number for each header.
 - Elisp: `~/.emacs.d/init.el`
-  - in post.md, the shortcut `C-c C-l` invokes a function, which does:
-	- bla, bla, ...
+  - in post.md, the shortcut `C-c C-l` invokes the following steps:
+	- looks up `_sync/postname.md.json` and finds the nearst anchor name
+	- call the next applescript with arguments which specifing a url and an anchor.
 - Applescript: `smart_jump_to_chrome.scpt`
-  - This is invokes by the previous elisp shortcut.
+  - invokes by the previous elisp shortcut.
 
 ## Chrome to Emacs:
 
@@ -87,3 +92,5 @@ I will explain how they are working together.
 # Future Work
 
 - don't add attributes when it's in syntax highlight mode
+- support a jump from archive page
+- when clicking the title, it invokes a jump to emacs: (done) <https://github.com/hi-ogawa/hi-ogawa.github.io/commit/e4d4054b29ecd2adf8033dcdbf350cdf9df89ae9>

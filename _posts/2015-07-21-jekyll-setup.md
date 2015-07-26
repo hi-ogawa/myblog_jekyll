@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll Setup"
+title: "? Jekyll Setup"
 description: ""
 category: 
 tags: [jekyll, ruby]
@@ -18,6 +18,15 @@ tags: [jekyll, ruby]
 - Change the default style
   - make the width of all pages smaller
   - change header style, bolder or color change
+- Show table of contents 
+- seperate [jekyll developement](https://github.com/hi-ogawa/myblog_jekyll) and
+  [io page](https://github.com/hi-ogawa/hi-ogawa.github.io) repositories
+  (to avoid custom plugin problems)
+  - this is a rake task to publish easily
+{% github { "url":     "https://github.com/hi-ogawa/myblog_jekyll/blob/8ad2edc3e78bd971b99634effcf5cc2486709b81/Rakefile", "start": 1  , "end":  9   , "lang": "ruby" }%}
+
+- custom tag for putting a code snippet from github
+{% github { "url":     "https://github.com/hi-ogawa/myblog_jekyll/blob/3a600e3f79b446cff90128694354a7d55ae5d612/_plugins/tag_test.rb", "start": 22  , "end":  68   , "lang": "ruby" }%}
 
 # What I Will Do
 
@@ -30,16 +39,20 @@ tags: [jekyll, ruby]
 - How to manage To-do in this blog
 - Not only jump to header, but also anything
 - Style change
-  - show table of contents at the side of main content
-	- <https://github.com/dafi/jekyll-toc-generator>
-	- <https://github.com/dafi/tocmd-generator>
+  - title, bigger or different color or something
+  - don't apply toc generator other pages than posts
 - why rake restart[jekyll] is cut off when running 'stop' part
   - <http://askubuntu.com/questions/184071/what-is-the-purpose-of-the-9-option-in-the-kill-command>
   - <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=rake%20kill%20process>
 - employ same code highlighter as used in github
-- create an on-going mark for easily find what is current task
+- enlarge picture by jquery magnifier of something
+- code snippet from github
+  - **get this work at the client side**
+	(since it seems like gettin the all source from github would take long time.)
+  - references:
 
-## Table of Contents Generator
+
+# Table of Contents Generator
 
 I used this <https://github.com/dafi/tocmd-generator>.
 

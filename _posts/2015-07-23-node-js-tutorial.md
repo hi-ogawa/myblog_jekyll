@@ -13,7 +13,7 @@ which is for [this]({% post_url 2015-07-21-jekyll-setup %}).
 But, basically this is just for my study and experiments of nodejs,
 so the npm package has a lot of things which don't make sense itself.
 
-### What I Learned and References
+# What I Learned and References
 
 - General overview and installation of node.js: <https://www.airpair.com/javascript/node-js-tutorial>
 - Node.js programming
@@ -45,15 +45,15 @@ so the npm package has a lot of things which don't make sense itself.
 	- coffee-repl ?
   - browse npm packages online: <https://www.npmjs.com/>
 
-### How My Package Works
+# How My Package Works
 
-#### **Installation:**
+## _Installation:_
 
 {% highlight bash %}
 $ npm install node_test_emacs_jump
 {% endhighlight %}
 
-#### **Usage:**
+## _Usage:_
 
 As an executable,
 {% highlight bash %}
@@ -67,7 +67,7 @@ p0 = new myModule.Person 'John', 'Doe'
 p0.fullname()                          # returns 'John Doe'
 {% endhighlight %}
 
-### Future Study
+# Future Study
 
 - Learn basic test framework in nodejs project as in
   <http://nickdesaulniers.github.io/blog/2013/08/28/making-great-node-dot-js-modules-with-coffeescript/>

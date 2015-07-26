@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Elisp Tweaks"
+title: "? My Elisp Tweaks"
 description: ""
 category: 
 tags: [elisp, emacs]
@@ -9,7 +9,7 @@ tags: [elisp, emacs]
 
 Here, I put some my own (highly possibly, some other did too) elisp tweaks.
 
-**For the convienience writing in Jekyll**
+# For the Convienience Writing in Jekyll
 
 {% highlight cl %}
 
@@ -40,7 +40,7 @@ Here, I put some my own (highly possibly, some other did too) elisp tweaks.
 {% endhighlight %}
 
 
-**elisp functions reference**
+# Elisp Functions Reference
 
 - shell-command-to-string
 - interctive function definition

@@ -26,34 +26,31 @@ Here, I write some basics I didn't know or what's different from my guess about 
 
 
 
-
----
-
-**Undefined value**
+# Undefined value
 {% highlight javascript %}
 var x;   // the value of x is `undefined`
 {% endhighlight %}
 
-**Left associative operator and Overloading**
+# Left associative operator and Overloading
 {% highlight javascript %}
 var x = 16 + 4 + 'hoge'    //  ==>  x is "20hoge"
 var y = 'hoge' + 16 + 4    //  ==>  y is "hoge164"
 {% endhighlight %}
 
-**Two ways of function definition**
+# Two ways of function definition
 {% highlight javascript %}
 var f = function(arg){ return arg + 2; };
 function g(arg){ return arg + 2; }            // semicolon is unnecessary?
 {% endhighlight %}
 
-**Accessing object properties**
+# Accessing object properties
 {% highlight javascript %}
 var x = {prop0: 'hoge', prop1: 12};
 // x.prop0     => 'hoge'
 // x['prop1']  =>  12
 {% endhighlight %}
 
-**Object Literals**
+# Object Literals
 
 These two seem to work same.
 {% highlight javascript %}
@@ -61,7 +58,7 @@ var x = { foo:  1,  bar:  2};
 var y = {'foo': 1, 'bar': 2}; 
 {% endhighlight %}
 
-**Scope**
+# Scope
 
 > In JavaScript, scope is the set of variables, objects, and functions you can access to.
 
@@ -74,14 +71,14 @@ function f() { x = 'hoge'; }
 alert(x)                      //  <= not error
 {% endhighlight %}
 
-**Global variables is just a property of `window` object**
+# Global variables is just a property of `window` object
 
 {% highlight javascript %}
 function f() { x = 'hoge'; }
 alert(window.x)               //  <= not error
 {% endhighlight %}
 
-**HTML events**
+# HTML events
 
 - <http://www.w3schools.com/jsref/dom_obj_event.asp>
 
@@ -100,7 +97,7 @@ alert(window.x)               //  <= not error
 	- Who is `this`?
 	- How different are `document` and `window` each other?
 
-**String**
+# String
 
 - **Quotes**
 
@@ -131,7 +128,7 @@ o bar"
 
 	Here is a list of String methods: <http://www.w3schools.com/jsref/jsref_obj_string.asp>
 
-**Comparison of object**
+# Comparison of object
 
 - **comparing values of two strings**
 
@@ -152,7 +149,7 @@ new String("john") == new String ('john')   =>  false
 
 
 
-**Number**
+# Number
 
 Javascript has only one type for numbers,
 which are always represented as 64-bit floating point:
@@ -173,7 +170,7 @@ which are always represented as 64-bit floating point:
 
 All methods related number objects or primitives are here: <http://www.w3schools.com/jsref/jsref_obj_number.asp>
 
-**Special objects**
+# Special objects
 
 - **Math object**: <http://www.w3schools.com/jsref/jsref_obj_math.asp>
 - **Date object**: <http://www.w3schools.com/jsref/jsref_obj_date.asp>
@@ -204,13 +201,13 @@ function isArray(myArray) {
 }
 {% endhighlight %}
 
-**What value is treated as `false`**
+# What value is treated as `false`
 
 {% highlight javascript %}
 _.some([0, -0, "", undefined, null, false, NaN])  //  false
 {% endhighlight %}
 
-**Switch case statement**
+# Switch case statement
 
 It seems kinda wierd. `case` is just testing from top.
 {% highlight javascript %}
@@ -231,7 +228,7 @@ switch (new Date().getDay()) {
 }
 {% endhighlight %}
 
-**Javascript Data Types**
+# Javascript Data Types
 
 The thing in Javascript can be divided as below:
 
@@ -254,11 +251,11 @@ The operator `typeof` returns the above 5 data types.
 
 Value conversion rules are here: <http://www.w3schools.com/jsref/jsref_type_conversion.asp>
 
-**Regular expression**
+# Regular expression
 
 <http://www.w3schools.com/jsref/jsref_obj_regexp.asp>
 
-**Error handling**
+# Error handling
 
 I don't know if it's common to use this error handling. I think I've never seen the code
 which uses this mechanism.
@@ -273,7 +270,7 @@ try {
 }
 {% endhighlight %}
 
-**Debugging**
+# Debugging
 
 I didn't know this reserved word. It will be a very good friend of mine.
 {% highlight javascript %}
@@ -282,7 +279,7 @@ debugger;
 console.log(x);
 {% endhighlight %}
 
-**Strict mode**
+# Strict mode
 
 This `"use strict"` is just what i saw on the tutorial of angular.js.
 There are a lot of code pattarn not allowed to write in this mode, which is obviously
@@ -299,7 +296,7 @@ Then, here is about Coffeescript and `"use strict"`.
 I don't go over everything here, but it looks like I don't have to care this mode as long as
 being with Coffeescript.
 
-**Coding convension**
+# Coding convension
 
 Actually these three parts are telling me I should write javascript with Coffeescript.
 That's it.
@@ -332,12 +329,12 @@ typeof x !== "undefined" && x !== null;      //    <-   `x?` in coffeescript
 
 
 
-**Reserved words**
+# Reserved words
 
 <http://www.w3schools.com/js/js_reserved.asp>
 
 
-**JSON (JavaScript Object Notation)**
+# JSON (JavaScript Object Notation)
 
 JSON data can be easilly converted to native Javascript object.
 {% highlight javascript %}
@@ -349,14 +346,14 @@ var obj = JSON.parse(text);
 {% endhighlight %}
 
 
-**HTML form validation API**
+# HTML form validation API
 
 - <http://www.w3schools.com/js/js_validation_api.asp>: 
   I'm suspicious this is a good practice to validate the input of forms.
   I suppose there's another way to handle this with js frameworks or libraries.
 
 
-**Javascript object**
+# Javascript object
 
 - _`this`_:
 
@@ -404,7 +401,7 @@ p.name();                                          // this returns "hi ogawa"
 {% endhighlight %}
 
 
-**Functions**
+# Functions
 
 - _as objects_: a function itself has properties and methods.
 
@@ -497,7 +494,7 @@ f.apply(o, ['hoge', 'foo']);          // returns 3
 {% endhighlight %}
 
 
-**Questions references**
+# Questions references
 
 - [Q1](#q1)
 - [Q2](#q2)
