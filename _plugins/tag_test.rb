@@ -58,7 +58,7 @@ module Jekyll
 <script src="/assets/code-prettify/src/lang-#{ h["lang"] }.js"></script>
 
 CODE
-        puts output
+        # puts output
         output
       end
     end
@@ -66,5 +66,3 @@ CODE
 end
 
 Liquid::Template.register_tag('github', Jekyll::MyGithubSnippetTag)
-
-# <?prettify lang=#{ h["lang"] }?>
