@@ -30,6 +30,11 @@ module Jekyll
     end
 
     def render(context)
+
+      if context.registers[:site].show_drafts
+        return "[[[github snippet doesn't works on --drafts mode]]]"
+      end
+
       h = JSON.parse @text
 
       filename = h["url"].match(/\/([^\/]*)$/)[1]
