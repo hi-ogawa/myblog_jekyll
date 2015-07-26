@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "? Ruby Basics"
+title: "Ruby Tips"
 description: ""
-category: 
+category: [tips]
 tags: []
 ---
 {% include JB/setup %}
@@ -37,3 +37,8 @@ tags: []
 - replace a word in string: <http://stackoverflow.com/questions/8381499/replace-words-in-string-ruby>
 - escape html string <http://stackoverflow.com/questions/1600526/how-do-i-encode-decode-html-entities-in-ruby>
 - multiline string literal <http://stackoverflow.com/questions/15838974/is-there-an-easy-way-to-do-multiline-indented-strings-in-ruby>
+
+
+- skip/break each loop
+  - next: <http://stackoverflow.com/questions/4230322/in-ruby-how-do-i-skip-a-loop-in-a-each-loop-similar-to-continue>
+  - break: <http://stackoverflow.com/questions/8502397/ruby-syntax-break-out-from-each-do-block>

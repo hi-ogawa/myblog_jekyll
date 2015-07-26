@@ -31,13 +31,13 @@ module Jekyll
 
     def render(context)
 
-      if context.registers[:site].show_drafts
-        return "[[[github snippet doesn't works on --drafts mode]]]"
-      end
-
       h = JSON.parse @text
 
       filename = h["url"].match(/\/([^\/]*)$/)[1]
+
+      if context.registers[:site].show_drafts
+        return "[[[github snippet doesn't works on --drafts mode <a href='#{h["url"]}'>view</a> ]]]"
+      end
 
       open(h["url"].sub("/blob/","/raw/")) do |f|
         source = f.read

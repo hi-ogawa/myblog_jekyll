@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "? My Elisp Tweaks"
+title: "Emacs/Elisp Tips"
 description: ""
-category: 
+category: [tips]
 tags: [elisp, emacs]
 ---
 {% include JB/setup %}
