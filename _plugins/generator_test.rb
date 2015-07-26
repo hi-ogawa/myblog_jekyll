@@ -4,7 +4,6 @@ module Reading
 
       return unless site.show_drafts
 
-
       require 'json'
       require 'pathname'
 
@@ -15,6 +14,8 @@ module Reading
       FileUtils.mkdir_p local_root.join('_sync')
 
       site.posts.each do |p|
+
+        break if p.content.strip == ""
 
         # deal with yaml front matter
         original_file_content = File.read(p.path, encoding: 'UTF-8')
