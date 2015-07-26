@@ -3,6 +3,6 @@ layout: post
 title: "? angular.js tutorial"
 description: ""
 category: 
-tags: []
+tags: [angular.js, javascript]
 ---
-{% include JB/setup %}
+

@@ -47,9 +47,15 @@ tags: [jekyll, ruby]
 - employ same code highlighter as used in github
 - enlarge picture by jquery magnifier of something
 - code snippet from github
-  - **get this work at the client side**
+  - get this work at the client side
 	(since it seems like gettin the all source from github would take long time.)
-  - references:
+  - for now, I just get that tag work only on without --drafts.
+	- Here is from <http://jekyllrb.com/docs/plugins/>:
+
+> Jekyll lets you access the site object through the `context.registers` feature
+> of Liquid at `context.registers[:site]`.
+> For example, you can access the global configuration file `_config.yml`
+> using `context.registers[:site].config`.
 
 
 # Table of Contents Generator
