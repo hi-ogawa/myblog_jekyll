@@ -5,9 +5,32 @@ description: ""
 category: [tips]
 tags: [elisp, emacs]
 ---
-{% include JB/setup %}
 
 Here, I put some my own (highly possibly, some other did too) elisp tweaks.
+
+# Auto Completion of Matching Brankets
+
+When I start to write _TypeScript_, I feel I need some support to automatically insert
+a matching branket or parenthesis, which is not necessarily as long as with _CoffeeScript_.
+
+Here is what I found about that kind of support:
+
+- <http://www.emacswiki.org/emacs/AutoPairs>
+- <http://ergoemacs.org/emacs/emacs_insert_brackets_by_pair.html>
+
+Actually, I might have used this mode before, then anyhow I threw it away.
+Maybe, I will appreciate this mode while writing _TypeScript_ now that I've gotten into
+_CoffeeScript's_ elegant syntax. We'll see.
+
+For now, I'm just turning on the electric-pair-mode, but some day, I want to tweak
+some setting by myself.
+
+# Complete a variable name with the same prefix word appearing in the same file
+
+- `Alt - slash`: `(dabbrev-expand ARG)`
+- Is it possible to widen referenced file to not only current file?
+  - It seems possible, see the variable: `dabbrev-friend-buffer-function`.
+	When the time comes, I'll check this out.
 
 # For the Convienience Writing in Jekyll
 

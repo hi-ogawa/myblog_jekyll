@@ -30,6 +30,10 @@ tags: [jekyll, ruby]
 
 # What I Will Do
 
+- comment area with disqus
+  - <http://www.speedofcreativity.org/2014/05/17/remove-disqus-around-the-web-ad-images-and-links-from-your-blog/>
+  - <https://help.disqus.com/customer/portal/articles/472097-universal-embed-code>
+  - <https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables>
 - Make appropriate index page and about.html
 - Add search function via right top box
   - <http://thornelabs.net/2014/05/12/instant-search-with-twitter-bootstrap-jekyll-json-and-jquery.html>

@@ -51,3 +51,17 @@ coming post data : {"sender":"chrome","lineno":"42","path":"/Users/hiogawa/repos
 
 coming post data : {"sender":"chrome","lineno":"42","path":"/Users/hiogawa/repositories/github_public/myblog/_posts/2015-07-21-jekyll-setup.md"}
 
+I'm waiting a request at localhost:4010/
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: listen EADDRINUSE
+  at exports._errnoException (util.js:746:11)
+  at Server._listen2 (net.js:1156:14)
+  at listen (net.js:1182:10)
+  at Server.listen (net.js:1267:5)
+  at Object.module.exports.serverStart (/Users/hiogawa/repositories/github_public/myblog_jekyll/node_modules/node_test_emacs_jump/lib/main.js:81:12)
+  at Object.<anonymous> (/Users/hiogawa/repositories/github_public/myblog_jekyll/node_modules/node_test_emacs_jump/bin/executable.coffee:6:10)
+  at Object.<anonymous> (/Users/hiogawa/repositories/github_public/myblog_jekyll/node_modules/node_test_emacs_jump/bin/executable.coffee:3:1)
+  at Module._compile (module.js:460:26)
+
