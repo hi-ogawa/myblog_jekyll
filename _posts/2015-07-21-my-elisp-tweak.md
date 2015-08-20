@@ -8,6 +8,11 @@ tags: [elisp, emacs]
 
 Here, I put some my own (highly possibly, some other did too) elisp tweaks.
 
+# stop inserting tabs in any modes
+
+- <http://www.emacswiki.org/emacs/NoTabs>
+- <http://vserver1.cscs.lsa.umich.edu/~rlr/Misc/emacs_tabs.htm>
+
 # Auto Completion of Matching Brankets
 
 When I start to write _TypeScript_, I feel I need some support to automatically insert

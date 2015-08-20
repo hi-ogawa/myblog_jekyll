@@ -6,6 +6,29 @@ category:
 tags: []
 ---
 
+# `ng-include` or `directive`
+
+- <http://stackoverflow.com/questions/24171893/angularjs-nginclude-vs-directive>
+- <http://stackoverflow.com/questions/22108719/ng-include-ng-template-or-directive-which-one-is-better-for-performance>
+- <https://groups.google.com/forum/#!topic/angular/0n7y4R0azDE>
+- <http://nathanleclaire.com/blog/2013/12/07/dont-fear-directives-in-angular-js/>
+
+# what kind of job should `directive` be responsible?
+
+- <http://programmers.stackexchange.com/questions/222528/should-angularjs-directive-directly-interact-with-services-or-is-it-considered-a>
+
+# angular-ui-router
+
+- sample: <https://angular-ui.github.io/ui-router/sample/#/>
+- unit testing
+  - <http://nikas.praninskas.com/angular/2014/09/27/unit-testing-ui-router-configuration/>
+  - <http://stackoverflow.com/questions/20433485/angular-ui-router-unit-testing-states-to-urls>
+
+# thoughts on global variables
+
+- <http://stackoverflow.com/questions/16739084/angularjs-using-rootscope-as-a-data-store>
+- <http://ilikekillnerds.com/2014/11/constants-values-global-variables-in-angularjs-the-right-way/>
+
 # Angularjs generator by Yeoman
 
 - Grunt automation
@@ -23,8 +46,20 @@ tags: []
 	- it minifies various resources.
 	- see `build:js` (or `build:css`) and `endbuild` in `app/index.html`.
 	- You should put your own scripts, like in `app/scripts`, into this region.
-  - Watch and Compile HAML
-    - <http://www.drurly.com/blog/2013/07/06/yeoman-and-haml>
+  - [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+	- [livereload](https://github.com/gruntjs/grunt-contrib-watch#optionslivereload)
+  - [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
+  - [grunt-shell](https://github.com/sindresorhus/grunt-shell)
+  - Watch and Compile Jade
+	- <https://github.com/adelciotto/Gruntfile/blob/master/GruntFile.js>
+
+- notes
+  - when `npm install`, giving an option `--save-dev` automatically update `package.json`.
+	- <http://stackoverflow.com/questions/19223051/grunt-js-what-does-save-dev-mean-in-npm-install-grunt-save-dev/19223182#19223182>
+
+  - objection to all "build" tools
+	- <http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/>
+	- <http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/>
 
 # Work on Ruby on Rails
 
@@ -108,6 +143,8 @@ root "application#angular"
 - jasmine: <http://jasmine.github.io/1.3/introduction.html>
 - karma: <https://www.airpair.com/angularjs/posts/testing-angular-with-karma>
 - protractor:
+- AngularJS Unit Testing – For Real, Though: <https://quickleft.com/blog/angularjs-unit-testing-for-real-though/>
+- ui router test (template loading): <https://github.com/angular-ui/ui-router/issues/212#issuecomment-69974072>
 
 - unit test: <https://docs.angularjs.org/guide/unit-testing>
 - end to end test: <https://docs.angularjs.org/guide/e2e-testing>

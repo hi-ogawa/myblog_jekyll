@@ -6,6 +6,39 @@ category: [tips]
 tags: []
 ---
 
+# utility libraries
+
+- [underscore](https://github.com/jashkenas/underscore),
+  [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped/blob/master/underscore/underscore.d.ts)
+- [lodash](https://github.com/lodash/lodash)
+- [boiler](https://github.com/Xaxis/boiler)
+- [lazy.js](https://github.com/dtao/lazy.js),
+  [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped/blob/master/lazy.js/lazy.js.d.ts)
+- [javascript-algorithms](https://github.com/mgechev/javascript-algorithms)
+
+
+# Under the hood (interaction with the native browser)
+
+- must watch videos <https://github.com/bolshchikov/js-must-watch>
+
+<iframe width="260" height="155" src="https://www.youtube.com/embed/dibzLw4wPms" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="155" src="https://www.youtube.com/embed/Bv_5Zv5c-Ts" frameborder="0" allowfullscreen></iframe>
+<iframe width="260" height="155" src="https://www.youtube.com/embed/UzyoT4DziQ4" frameborder="0" allowfullscreen></iframe>
+
+- [Understanding JavaScript Function Invocation and "this"](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+
+- <https://www.youtube.com/watch?v=Bv_5Zv5c-Ts>
+  - the real mechanism of hoisting and execution context:
+    <https://youtu.be/Bv_5Zv5c-Ts?t=41m43s>
+    - `Uncaught: ReferenceError` vs. `undefined`
+  - scope chain (lexical outer environment): <https://youtu.be/Bv_5Zv5c-Ts?t=1h16m7s>
+  - asynchronicity of various engines composing a browser:
+    <https://youtu.be/Bv_5Zv5c-Ts?t=1h39m10s>
+    - only after any global code is executed, events queue is watched.
+  - Framework Aside: <https://youtu.be/Bv_5Zv5c-Ts?t=2h58m13s>
+    - loading js scripts from html
+  - Objects and functions <https://youtu.be/Bv_5Zv5c-Ts?t=3h5m20s>
+
 # coffeescript
 
 - fat arrow
