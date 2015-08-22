@@ -6,6 +6,20 @@ category: [tips]
 tags: []
 ---
 
+# fluent interface in javascript
+
+- <https://en.wikipedia.org/wiki/Fluent_interface>
+- <http://nikas.praninskas.com/javascript/2015/04/26/fluent-javascript/>
+
+# style guides
+
+- Airbnb (including ES6) <https://github.com/airbnb/javascript#ecmascript-6-styles>
+
+# ECMAScript 5.1
+
+- annotated source? <http://es5.github.io/>
+- official <http://ecma-international.org/ecma-262/5.1/>
+
 # utility libraries
 
 - [underscore](https://github.com/jashkenas/underscore),
@@ -26,6 +40,42 @@ tags: []
 <iframe width="260" height="155" src="https://www.youtube.com/embed/UzyoT4DziQ4" frameborder="0" allowfullscreen></iframe>
 
 - [Understanding JavaScript Function Invocation and "this"](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+  - Invoking a function call could be considered as just a suger of the "primitive" method
+    `<function>.call(<object>, <arg0>, <arg1>, ...)`.
+  - see [this](http://hi-ogawa.github.io/2015/07/21/javascript-basics/#tocAnchor-1-25).
+  - `bind`: (`f`: function, `o`: object) ->> (function f whose `this` is fixed as a given `o`)
+- [Understanding "Prototypes" in JavaScript](http://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/)
+  - `Object.create(null)`: returns an empty object
+  - the types of a property which appear on the argument of `Object.defineProperty()`:
+    - "enumerable": make it show up on `for(prop in obj)` loop.
+    - "configurable": make it able to be deleted or be changed its other attributes
+      (what's this "attributes" supposed to mean? those 3 types?).
+    - "writable": make it able to be overwritten anytime.?
+  - `Object.create()` works like inheritance of objects because of this fact:
+
+> In fact, JavaScript objects also have one additional attribute: a pointer to another object. We call this pointer the object's prototype. If you try to look up a key on an object and it is not found, JavaScript will look for it in the prototype. It will follow the "prototype chain" until it sees a null value. In that case, it returns undefined.
+
+  - method/property assignments for objects are just a sugar of `Object.defineProperty()`.
+  - object literal is a sugar of `Object.create(Object.prototype)`
+  
+{% highlight javascript %}
+var e0 = Object.create(null);
+Object.getPrototypeOf(e0)     // returns `null`
+var e1 = {};
+Object.getPrototypeOf(e1)     // returns `Object.prototype`
+{% endhighlight %}
+
+  - `Object.prototype` has a reasonable methods we expect for objects, which can be overridden.
+    - ex. `.toString()` ...
+  - what `new <f: function>(<arg0>, <arg1>, ...)` does:
+{% highlight javascript %}
+var o = Object.create(f.prototype);
+
+{% endhighlight %}
+  
+- prototype chain
+  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain>
+  - <http://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/>
 
 - <https://www.youtube.com/watch?v=Bv_5Zv5c-Ts>
   - the real mechanism of hoisting and execution context:

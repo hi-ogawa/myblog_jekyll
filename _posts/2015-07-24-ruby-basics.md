@@ -6,18 +6,18 @@ category: [tips]
 tags: []
 ---
 
+# rbenv plugins
+
+- sudo: <https://github.com/dcarley/rbenv-sudo>
+  - use case: deploy rails on VPS which requires root permission for binding port 80
+    - `rbenv sudo rails s -p 80`
+  
 # Server and Client seperation
 
 - 3 options: <http://stackoverflow.com/questions/10941249/separate-rest-json-api-server-and-client?rq=1>
 - use of sub domain: <http://stackoverflow.com/questions/25031188/securing-my-backbone-js-client-to-a-node-js-based-api-that-is-public>
 
 
-# deployment
-
-- compare them: <https://www.airpair.com/ruby-on-rails/posts/rails-host-comparison-aws-digitalocean-heroku-engineyard>
-- amazone web service
-  - <http://dennissuratna.com/rails-deployment-aws2/>
-  - <http://aws.amazon.com/articles/Ruby/846>
 
 # How to write down JSON API spec
 
