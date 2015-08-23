@@ -21,7 +21,7 @@ tags: []
   - ex. Rails, Sinatra, ...
 
 - what Rack server does is preparing "handler" like this:
-  - TODO: (Someday, I follow one of those libraries below and ruby web request primitive.)
+  - (Someday, I follow one of those libraries below and ruby web request primitive.)
   - ex.
     - WEBrick(included in ruby's standard library): <http://ruby-doc.org/stdlib-2.0.0/libdoc/webrick/rdoc/WEBrick.html>
     - Unicorn: <https://github.com/blog/517-unicorn>
@@ -184,19 +184,10 @@ module Rack
     def wrapped_app
       @wrapped_app ||= build_app app
       ### (2.1.1) initialize:     `Rack::Server#app`
-      ### (2.1.2) add middleware: `Rack::Server#build_app` TODO
+      ### (2.1.2) add middleware: `Rack::Server#build_app`
 
     def app
       @app ||= ... ? ... : build_app_and_options_from_config
-
-    def build_app(app)
-      middleware[options[:environment]].reverse_each do |middleware|  # <= (4) 
-        middleware = middleware.call(self) if middleware.respond_to?(:call)
-        next unless middleware
-        klass, *args = middleware
-        app = klass.new(app, *args)
-      end
-      app
 
     def build_app_and_options_from_config
       app, options = Rack::Builder.parse_file(self.options[:config], opt_parser)
@@ -211,7 +202,7 @@ module Rack
 
 {% endhighlight %}
 
-### (2.1.1) initialize: (following "Rack::Server#app")
+## (2.1.1) Initialize rack app: `Rack::Server#app`
 
 {% highlight ruby %}
 
@@ -251,13 +242,6 @@ module Rails
       run_initializers(group, self)
       # the parent class `Rails::Realtie` `include` a module `Rails::Initializable`
 
-    def initializers
-    # <= `Rails::Application#initializers` isn't execited via
-    #    `Rails::Initilizable::ClassMethods.initilizers_chain`
-    #     since this is not an class method. (then, why is this here ?? (TODO))
-      Bootstrap.initializers_for(self) ...
-      
-
  ## classes which `include Initializable` ##
 module Rails
   class Realtie
@@ -280,8 +264,8 @@ module Rails
     def run_initializers(group=:default, *args)
       initializers.tsort_each do |initializer|
         initializer.run(*args) if initializer.belongs_to?(group)
-        # <= corresponds to `Rails::Initializable::Initializer#run`
-        #    - go into the detail of at least one "initializer" TODO
+        # if you want to know what is "run" here, see the block given to
+        # `initializer` in bootstrap.rb, finisher.rb
 
     def initializers
       @initializers ||= self.class.initializers_for(self)
@@ -290,7 +274,9 @@ module Rails
     class ClassMethods
       def initializers_for(binding)
         Collection.new(initializers_chain.map { |i| i.bind(binding) })
-        # <= what does `bind` do? TODO
+        # `Rails::Initializable::Initilizer#bind` keeps the `@context` for
+        # `Rails::Initializable::Initilizer` to evaluate a "initializing" block
+        # via `@context.instance_exec` in `Rails::Initializable::Initilizer#run`
 
       def initializers_chain
         initializers = Collection.new   # defined below
@@ -299,6 +285,7 @@ module Rails
           # <= this loop runs through included modules and super classes of
           #   `MyApp::Application` (includs itself) having a method `initializers`.
           initializers = initializers + klass.initializers
+          # the real data is kept under `@initializers`
         end
         initializers
 
@@ -312,8 +299,16 @@ module Rails
         # `Rails::Aplication::Bootstrap`, `Rails::Aplication::Finisher`
         
     class Initializer
+      def initialize(name, context, options, &block)
+        options[:group] ||= :default
+        @name, @context, @options, @block = name, context, options, block
+        
       def run(*args)
         @context.instance_exec(*args, &block)
+
+      def bind(context)
+        return self if @context
+        Initializer.new(@name, context, @options, &block)
 
     class Collection < Array # just an `Array` with some `tsort` oprations.
 
@@ -323,49 +318,68 @@ module Rails
     module Bootstrap
       include Initializable
 
-      # those `initializer` functions are executed just before calling
+      #  those `initializer` functions are executed just before calling
       # `Rails::Application::Bootstrap.initializers` in `initializers_chain`
-      # because of `autoload :Bootstrap` in `Rails::Application`.
+      #  because of `autoload :Bootstrap` in `Rails::Application`.
 
       initializer :initialize_logger, group: :all do ... end
-      # <= this puts `Rails::Initializable::Initializer` instance into
-      #    `Rails.application@initializers`
-
- # realties/rails/rack.rb (2.1.2) add middleware ??
-module Rack
-  class Server
-    def middleware
-      middlewares = []
-      middlewares << [Rails::Rack::Debugger] if options[:debugger]
-      middlewares << [::Rack::ContentLength]
-
-module Rack
-  class Server
-    def self.middleware
-      @middleware ||= begin
-        m = Hash.new {|h,k| h[k] = []}
-        m["deployment"].concat [
-          [Rack::ContentLength],
-          [Rack::Chunked],
-          logging_middleware
-        ]
-        m["development"].concat m["deployment"] + [[Rack::ShowExceptions], [Rack::Lint]]
-        m
-      end
-    end
-
-    def middleware
-      self.class.middleware
-    end
+      #  this puts `Rails::Initializable::Initializer` instance into
+      # `Rails.application@initializers`
 
 
 {% endhighlight %}
 
-### (2.2) "Rack::Handler::WEBrick.run" ->> "WEBrick::HTTPServer#start" 
+## (2.1.2) Add middleware: `Rack::Server#build_app`
 
-- if i feel like perusing this part:
-  [WEBrick](http://ruby-doc.org/stdlib-2.0.0/libdoc/webrick/rdoc/WEBrick.html)
+{% highlight ruby %}
 
+ # rack/server.rb
+module Rack
+  class Server
+    def wrapped_app
+      @wrapped_app ||= build_app app
+
+    def build_app(app)
+      middleware[options[:environment]].reverse_each do |middleware|
+        # (TODO-0): I suppose `middleware` is just a single element array
+        # like `[Rails::Rack::Debugger]`, but that doesn't make any sence
+        # (even `Rails::Rack::Debugger` doesn't `respond_to` `call`)
+        # Forget it, somehow it is working. 
+        middleware = middleware.call(self) if middleware.respond_to?(:call)
+        next unless middleware
+        klass, *args = middleware
+      #`klass` is a class stands for "rack middleware"(e.g.`Rails::Rack::Debugger`).
+        app = klass.new(app, *args) # (TODO-1)
+      end
+      app
+
+    def middleware # this is overwridden by `Rails::Server#middleware`
+
+ # realties/rails/commands/server.rb
+module Rails
+  class Server < ::Rack::Server
+    def middleware
+      middlewares = []
+      ... middlewares << [Rails::Rack::Debugger] ...
+      Hash.new(middlewares)  # this hash returns a value `middlewares` for any key.
+
+ # realties/rails/rack/debugger.rb (as an example of rack middleware)
+module Rails
+  module Rack
+    class Debugger
+      def initialize(app)
+        @app = app ...
+        
+      def call(env)
+        @app.call(env)
+
+{% endhighlight %}
+
+## (2.2) running rack web server: `Rack::Handler::WEBrick.run`
+
+(TODO-3): following what is happening in
+[WEBrick](http://ruby-doc.org/stdlib-2.0.0/libdoc/webrick/rdoc/WEBrick.html).
+  
 {% highlight ruby %}
 
  # .../rack/handler/webrick.rb
@@ -379,13 +393,14 @@ module Rack
  # ...stdlib.../webrick.rb  ## to be continued ... ?
 {% endhighlight %}
 
-- TODO:
-  - where exactly is the instance of `Rails::Application` is created?
-  - `Rails::Initializable#initialize`: how does `Rails::Application#initialize!` leads to this method?
-  - `Rack::Server#initialize`: how does the middleware work?
-- `::Rack::Server` means `Rack::Server` (defined in `rack/server.rb`) not 
-  `Rails::Rack::Server` (see the below "Basic Facts in Ruby").
+### What I skipped
 
+- TODO-0: why `middleware.call(self)` in `Rack::Server#build_app` is working .
+- TODO-1: how stacking "rack middleware" works through the loop of
+  `app = klass.new(app)` in `Rack::Server#build_app`.
+- TODO-2: how `Module#ancestors` works internally
+- TODO-3: what "rack web server" is responsible to do.
+- TODO-4: how to debug rails framework itself
 
 # Routing
 
@@ -424,16 +439,16 @@ module Rack
   [`Class#inherited`](http://ruby-doc.org/core-2.0.0/Class.html#method-i-inherited),
   [`Module#included`](http://ruby-doc.org/core-2.2.0/Module.html#method-i-included),
   [`Module#ancestors`](http://ruby-doc.org/core-2.1.0/Module.html#method-i-ancestors),
-  [`UnboundMethod#bind`](http://ruby-doc.org/core-2.0.0/UnboundMethod.html#method-i-bind),
-  [`Module#instance_method`](http://ruby-doc.org/core-2.2.2/Module.html#method-i-instance_method),
   [`Module#include`](http://ruby-doc.org/core-2.0.0/Module.html#method-i-include),
   [`Module#append_features`](http://ruby-doc.org/core-2.0.0/Module.html#method-i-append_features),
   [`Object#respond_to?`](http://ruby-doc.org/core-2.2.3/Object.html#method-i-respond_to-3F),
-  [`Module#autoload`](http://ruby-doc.org/core-2.0.0/Module.html#method-i-autoload)
+  [`Module#autoload`](http://ruby-doc.org/core-2.0.0/Module.html#method-i-autoload),
+  [`Hash.new`](http://ruby-doc.org/core-2.2.0/Hash.html#method-c-new)
 
 ## Any features I didn't know
 
 - `Module`, `Class`, `Module#include`, `class <` (inheritance) and `Module#ancestors`
+  - (TODO-2)
   - good picture explaining the relation between "objects" in ruby:
     [stackoverflow](http://stackoverflow.com/questions/19045195/understanding-ruby-class-and-ancestors-methods#answer-19045339)
     <img src="http://i.stack.imgur.com/tBVGQ.png">
@@ -448,7 +463,7 @@ module Rack
   - Are they hinting that `Module#include` and `class SubC < SuperC`
     have something in common internally?
     
-  - by the way, [`Module#include`] seems just calling [`Module#append_features`].
+  - by the way, `Module#include` seems just calling `Module#append_features`.
 
   - My guess is `Module#include` change some data represented by `RCLASS_SUPER(p)`
     (I gave up following everything).
