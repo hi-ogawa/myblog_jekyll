@@ -9,6 +9,11 @@ tags: []
 # Overall reference
 
 - [WikiBooks](https://en.wikibooks.org/wiki/Ruby_Programming)
+  - [variables and constants](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
+    - [pre-defined variables](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants#Pre-defined_Variables)
+  - [classes](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
+
+- [The Ruby Cross Reference](http://rxr.whitequark.org/mri/ident?i=rb_include_module)
 
 # rbenv plugins
 
