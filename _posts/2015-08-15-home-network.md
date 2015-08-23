@@ -30,15 +30,65 @@ tags: []
     - `ping: sendto: Host is down`
     - `ping: sendto: No route to host`
 
-- toggling wifi:
-  - `networksetup -setairportpower airport on`
-  - `networksetup -setairportpower airport off`
+- `networksetup` command
+  - `networksetup -printcommands`: show available options
+  - `networksetup -help`: show available options with explanation
 
-- show current Wifi network:
-  - `networksetup -getairportnetwork en0`
+  - toggling wifi:
+    - `networksetup -setairportpower airport on` or
+      `networksetup -setairportpower en0 on`
+    - `networksetup -setairportpower airport off` or
+      `networksetup -setairportpower en0 off`
+  - show/set current Wifi network:
+    - `networksetup -getairportnetwork en0`
+    - `networksetup -setairportnetwork en0 <SSID> <password>`
+
+  - show current network info connecting via Wi-Fi:
+    - `networksetup -getinfo  Wi-Fi`
 
 - show available SSID:
   - `/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s`
+
+- toggle between two SSID depending on the status ping to the router
+
+{% highlight ruby %}
+ # .../job/network_toggle.rb:
+ # usage: nohup ruby network_ttogle.rb &
+ 
+DEVICE = "en0"
+SSIDs  = ["...ssid0...", "...ssid1..."]
+PASS   = "...."
+
+def set_SSID(device, id, pass)
+  system "networksetup -setairportpower en0 on"
+  puts system "networksetup -setairportnetwork #{device} #{id} #{pass}"
+  puts $?.to_i
+end
+
+def get_SSID(device)
+  `networksetup -getairportnetwork #{device}`.match(/\:\ (.*)$/)[1]
+end
+
+def check_and_change
+  system "ping -c 1 192.168.0.1"
+  unless $?.to_i == 0
+    id = SSIDs.reject{|id| id == get_SSID(DEVICE)}[0]
+    set_SSID(DEVICE, id, PASS)
+  end
+end
+
+def loop
+  if SSIDs.include? get_SSID(DEVICE)
+    check_and_change
+  end
+  sleep 10
+  loop
+end
+
+loop
+{% endhighlight %}
+
+
 
 ## Network Setting from CLI
 

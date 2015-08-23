@@ -77,14 +77,59 @@ def server
   set_application_directory!        # <= Dir.chdir("(rails root)")
   require_command!("server")        # <= require "rails/commands/server"
   Rails::Server.new.tap do |server|
-	require APP_PATH              # <= require "(rails root)/config/application"
-	Dir.chdir(Rails.application.root) # <= TODO: when `Rails.application` is set?
-	server.start                  # <= Rails::Server.start
-
+    # `Rails::Server.new` doesn't do big things. ignore it, for now. 
+    require APP_PATH   # (1)
+    Dir.chdir(Rails.application.root)
+    server.start       # (2)
 {% endhighlight %}
 
+## (1) "require APP_PATH" ->> defining "Rails.application"
 
-## "Rails::Server" ->> "Rack::Server" ->> "WEBrick::HTTPServer"?
+{% highlight ruby %}
+
+ # railties/rails.rb # first of all, `Rails` has an instance variable `application`
+module Rails
+  class << self
+    attr_accessor :application, :cache, :logger
+
+ # (rails root)/config/application.rb
+require 'rails/all'   # <= require active_record, action_controller, etc...
+Bundler.require(*Rails.groups)
+module MyApp
+  class Application < Rails::Application
+   # <= this triggers `Rails::Application.inherited(MyApp::Application)`
+
+ # railties/rails/application.rb
+module Rails
+  class Application < Engine
+    class << self
+      def inherited(base)
+        # codes triggered when `module MyApp; class Application < Rails::Application`
+        super
+        base.instance     # <= this leads to `Rails::Realtie.instance`, see below.
+
+    def initialize(initial_variable_values = {}, &block)
+      Rails.application ||= self
+
+ # railties/rails/engine.rb
+module Rails
+  class Engine < Railtie
+
+ # railties/rails/realtie.rb
+module Rails
+  class Realtie
+    class << self
+      def instance
+        @instance ||= new   # <= Here it is!! this creates `MyApp::Application.new`.
+{% endhighlight %}
+
+## (2) "server.start" ->> "Rails::Server#start"
+
+- (2.1) building "rack app"
+  - "Rack::Server#wrapped_app"
+- (2.2) running "rack compatible web server"
+  - "Rack::Handler::WEBrick.run" ->> "WEBrick::HTTPServer#start"
+  - I don't follow this part so much.
 
 {% highlight ruby %}
 
@@ -94,15 +139,15 @@ require 'rails'
 module Rails
   class Server < ::Rack::Server
     def initialize(*)
-      super                   # <= Rack::Server.initialize
-      set_environment         # <= set `ENV["RAILS_ENV"]`
+      super
+      set_environment  # <= set `ENV["RAILS_ENV"]`
 
     def start
       print_boot_information  # what you see after `$ rails s`
       trap(:INT) { exit }
       create_tmp_directories  # `mkdir tmp/{cache, pids, sessions, sockets}`
       log_to_stdout if options[:log_stdout]
-      super                     # <= Rack::Server.start
+      super
 
     def default_options
       super.merge({
@@ -110,18 +155,16 @@ module Rails
         environment: (ENV['RAILS_ENV'] || ENV['RACK_ENV'] || "development").dup, ...
         config:      File.expand_path("config.ru")
     
-
  # .../rack/server.rb
 module Rack
   class Server
     def initialize(options = nil)
       @options = options
-      @app = options[:app] if options && options[:app] # TODO: is this not relavant now?
 
     def start &blk
       server.run wrapped_app, options, &blk
-       # <= (5) wrapped_app
-       # <= (6) Rack::Handler::WEBrick.run
+       # <= (2.1) wrapped_app
+       # <= (2.2) server.run leads to Rack::Handler::WEBrick.run
 
     def server
       @_server ||=  ... || Rack::Handler.default(options)
@@ -157,7 +200,7 @@ module Rack
 module Rack
   class Builder
     def self.parse_file(config, opts = Server::Options.new)
-      ... cfgfile = ::File.read(config) ...  # <= read `(rails root)/config.ru`
+      ... cfgfile = ::File.read(config) ...  # <= reads `(rails root)/config.ru`
       app = new_from_string cfgfile, config
 
     def self.new_from_string(builder_script, file="(rackup)")
@@ -169,14 +212,6 @@ module Rack
       instance_eval(&block) if block_given?
         # <= run the code in `config.ru` as in `Rack::Builder`
 
-    def to_app
-      app = @map ? generate_map(@run, @map) : @run
-      fail "missing run or map statement" unless app
-      app = @use.reverse.inject(app) { |a,e| e[a] }
-      @warmup.call(app) if @warmup
-      app
-    end
-
     def run(app)
       @run = app
 
@@ -186,51 +221,50 @@ run Rails.application  # <= `Rack::Builder#run`
 
  # (rails root)/config/environment.rb
 require File.expand_path('../application', __FILE__)
-Rails.application.initialize!                                  # (2)
-
- # (rails root)/config/application.rb                          # (1)
-require 'rails/all'   # <= require active_record, action_controller, etc...
-Bundler.require(*Rails.groups) # <= TODO: when did you create `Rails.groups`
-module MyApp
-  class Application < Rails::Application
-
- # .../railties/rails/application.rb # <= I'm not sure this is really executed (Rails::Application.new should be called somewhere).
-module Rails
-  class Application < Engine
-    def initialize(initial_variable_values = {}, &block)
-      Rails.application ||= self
-
- # .../railties/rails.rb
-module Rails
-  class << self
-    attr_accessor :application, :cache, :logger            # <= there exists `Rails.application` here.
-    delegate :initialize!, :initialized?, to: :application # <= `Rails.initialize!` calls `Rails.application.initialize!` ??
+ # <= returns `false` (see `require APP_PATH` in `rails/commands/commands_tasks.rb`)
+Rails.application.initialize!  # <= `Rails::Application#initialize!`
 
  # .../railties/rails/application.rb # (2)
 module Rails
   class Application < Engine
-    def initialize!(group=:default) #:nodoc:
+    def initialize!(group=:default)
       run_initializers(group, self)
+      # the parent class `Rails::Realtie` `include` a module `Rails::Initializable`
+
+ # realtie.rb
+module Rails
+  class Realtie
+    include Initializable # this triggers `Rails::Initializable.included`
 
  # .../railties/rails/initializable.rb
 module Rails
   module Initializable
+    def self.included(base)
+      base.extend ClassMethods
+      # methods in `ClassMethods` are available
+      # from `MyApp::Application` (as class methods)
+      
     def run_initializers(group=:default, *args)
-      return if instance_variable_defined?(:@ran)
       initializers.tsort_each do |initializer|
         initializer.run(*args) if initializer.belongs_to?(group)
-      end
-      @ran = true
-    end
 
     def initializers
       @initializers ||= self.class.initializers_for(self)
-    end
+      # here, `self` is `Rails.Application`, which means
+      #       `self.calss` is `MyApp::Application`
 
-    class Initializer
-      def run(*args)
-        @context.instance_exec(*args, &block)
-      end
+    class ClassMethods
+      def initializers_for(binding)
+        Collection.new(initializers_chain.map { |i| i.bind(binding) })
+
+      def initializers_chain
+        initializers = Collection.new
+        ancestors.reverse_each do |klass|
+          next unless klass.respond_to?(:initializers)
+          initializers = initializers + klass.initializers
+        end
+        initializers
+
 
  # <= corresponds to (4)
 module Rack
@@ -294,7 +328,7 @@ module Rack
 
 # Active Support
 
-- [`#delegate`](http://apidock.com/rails/Module/delegate)
+- [`#delegate`](http://apidock.com/rails/Module/delegate),
 
 # Bundler
 
@@ -313,7 +347,9 @@ module Rack
   [`Object#inspect`](http://ruby-doc.org/core-2.2.2/Object.html#method-i-inspect),
   [`Object#freeze`](http://ruby-doc.org/core-2.2.3/Object.html#method-i-freeze),
   [`Module#const_get`](http://ruby-doc.org/core-2.1.0/Module.html#method-i-const_get),
-  [`File.expand_path`](http://ruby-doc.org/core-2.1.5/File.html#method-c-expand_path)
+  [`File.expand_path`](http://ruby-doc.org/core-2.1.5/File.html#method-c-expand_path),
+  [`Class#inherited`](http://ruby-doc.org/core-2.0.0/Class.html#method-i-inherited),
+  [`Module#included`](http://ruby-doc.org/core-2.2.0/Module.html#method-i-included)
 
 ## Any features I didn't know
 
@@ -372,11 +408,21 @@ def anything.method_for_singleton_class
 end
 {% endhighlight %}
 
+- `module Rails; module Initializable; def self.included(base); base.extend ClassMethods`
+  - `Module#included`, `ClassMethods`, `active_support/concern`
+    - [rails api](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html)
+    - <http://yehudakatz.com/2009/11/12/better-ruby-idioms/>
+    - [stackoverflow](http://stackoverflow.com/questions/7463440/why-do-we-need-classmethods-and-instancemethods)
+
+- `Rails::Application` and `Rails.application`
+  - TODO0:
+
 # References
 
 - RailsGuides:
   - [The Rails Initialization Process](http://guides.rubyonrails.org/initialization.html)
   - [Rails on Rack](http://guides.rubyonrails.org/rails_on_rack.html)
+  - [Configuring Rails Application](http://guides.rubyonrails.org/configuring.html)
 - RailsCast:
   - [#150 Rails Metal](http://railscasts.com/episodes/150-rails-metal)
   - [#151 Rack Middleware](http://railscasts.com/episodes/151-rack-middleware)
