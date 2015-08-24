@@ -47,6 +47,11 @@ As I read the source code, I picked up the path of initializing chain (in my loc
 For simplicity, I omitted a lot of parts of each file (I don't even write three dots "...") and
 sometimes added the meaning of methods as omments without showing the code of methods.
 
+These two helps me a lot to see the overall direction.
+
+- [RailsCast #299](http://railscasts.com/episodes/299-rails-initialization-walkthrough)
+- [RailsGuides](http://guides.rubyonrails.org/initialization.html)
+
 ## "$ rails s" ->> "Rails::Server"
 
 {% highlight ruby %}
@@ -402,6 +407,130 @@ module Rack
 - TODO-3: what "rack web server" is responsible to do.
 - TODO-4: how to debug rails framework itself
 
+# Configuring
+
+- [RailsGuides](http://guides.rubyonrails.org/configuring.html)
+
+Here are the examples of initialization code and common three placements
+in your Rails application.
+
+{% highlight ruby %}
+ ## (A) `config/application.rb`
+module Myapp
+  class Application < Rails::Application
+    config.time_zone = 'Central Time (US & Canada)' # <= `Rails::Application#config`
+
+ # (B) `config/environments/development.rb`
+Rails.application.configure do
+  # <= `Rails::Railtie#configure` evaluates a block with `instance_eval`
+  config.cache_classes = false
+
+ # (C) `config/initializers/filter_parameter_logging.rb`
+Rails.application.config.filter_parameters += [:password]
+{% endhighlight %}
+
+Rails source corresponds to the above could be those below.
+
+{% highlight ruby %}
+ # the family of `Rails::Application`
+module Rails
+  class Application < Engine
+    autoload :Configuration, 'rails/application/configuration'
+    def config
+      @config ||= Application::Configuration.new ...
+...
+  class Engine < Railtie
+    autoload :Configuration, "rails/engine/configuration"
+    def config  # overridden by `Rails::Application#config`
+...
+  class Railtie
+    autoload :Configuration, "rails/railtie/configuration"
+    def configure(&block)
+      instance_eval(&block)
+
+ # the family of `Rails::Application::Configuration`
+module Rails
+  class Application
+    class Configuration < ::Rails::Engine::Configuration
+      attr_accessor ..., :cache_classes, :filter_parameters, :time_zone, ...
+      def initialize(*)
+        super
+        @filter_parameters = []
+        @time_zone         = "UTC"
+...
+  class Engine
+    class Configuration < ::Rails::Railtie::Configuration
+      ... attr_writer :middleware, ...
+      def initialize(root=nil)
+        super() ...
+        @root = root
+...
+  class Railtie
+    class Configuration
+      def initialize
+        @@options ||= {}
+
+{% endhighlight %}
+
+The comments in the automatically generated file `config/application.rb` says:
+
+> Settings in config/environments/* take precedence over those specified here.
+> Application configuration should go into files in config/initializers
+> -- all .rb files in that directory are automatically loaded.
+
+Here, "take orecedence over" means just "overwrite"
+because of the execution order of relevant files.
+
+(TODO) (A) -> (B) -> (C) or (A) -> (C) -> (B)
+
+Let's get into how these initialization order is realized
+through the whole rails application initialization process.
+
+- (A): `require APP_PATH` (see <a href="#tocAnchor-1-2-2">here</a>)
+- (B), (C): `initializers_chain` in `Rails.application.initialize!` (see <a href="">here</a>)
+
+{% highlight ruby %}
+ # (B) `config/environments/*.rb`, (C) `config/initializers/*.rb`
+module Rails
+  class Engine
+    # corresponds to `Rails::Initializable::ClassMethods#initializer`
+    initializer :load_environment_config, ... do
+      paths["config/environments"].existent.each do |environment|
+        require environment
+
+    initializer :load_config_initializers do
+      config.paths["config/initializers"].existent.sort.each do |initializer|
+        load_config_initializer(initializer)
+...
+    class Configuration < ::Rails::Railtie::Configuration
+      def paths
+        @paths ||= begin
+          paths = Rails::Paths::Root.new(@root)
+          paths.add "config/environments", glob: "#{Rails.env}.rb"
+          paths.add "config/initializers", glob: "**/*.rb"
+...
+  module Paths
+    class Root
+      def add(path, options = {})
+        ... @root[path] = Path.new(self, path, with, options)
+    class Path
+      def existent  # expands glob and returns files which exist
+        expanded.select { |f| File.exist?(f) } 
+
+{% endhighlight %}
+
+Those blocks given to `Rails::Initializable::ClassMethods#initializer` are executed
+in the context of `Rails.application` since `Initializer#bind` sets
+`@context = Rails.application` and `Initializer#run` the blocks via `@context.instance_exec`
+(see the walkthrough <a href="#tocAnchor-1-2-4">above</a>).
+
+- TODO:
+  - `Rails.application.paths`
+  - `Rails.application.config.paths`
+  - `Rails.application.load_config_initializer`
+  - hash arguments (like `Initializer.new`).
+
+
 # Routing
 
 - [RailsCast 231](http://railscasts.com/episodes/231-routing-walkthrough)
@@ -593,6 +722,7 @@ end
   - [Rails on Rack](http://guides.rubyonrails.org/rails_on_rack.html)
   - [Configuring Rails Application](http://guides.rubyonrails.org/configuring.html)
 - RailsCast:
+  - [#299 Rails Initialization Walkthrough](http://railscasts.com/episodes/299-rails-initialization-walkthrough)
   - [#150 Rails Metal](http://railscasts.com/episodes/150-rails-metal)
   - [#151 Rack Middleware](http://railscasts.com/episodes/151-rack-middleware)
   - [#231 Routing WalkThrough](http://railscasts.com/episodes/231-routing-walkthrough)

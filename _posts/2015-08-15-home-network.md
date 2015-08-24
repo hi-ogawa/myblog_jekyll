@@ -52,17 +52,14 @@ tags: []
 - toggle between two SSID depending on the status ping to the router
 
 {% highlight ruby %}
- # .../job/network_toggle.rb:
- # usage: nohup ruby network_ttogle.rb &
- 
+ # ruby network_ttogle.rb
 DEVICE = "en0"
-SSIDs  = ["...ssid0...", "...ssid1..."]
-PASS   = "...."
+SSIDs  = ["hoge-ssid", "foo-ssid"]
+PASS   = "passpass"
 
 def set_SSID(device, id, pass)
-  system "networksetup -setairportpower en0 on"
-  puts system "networksetup -setairportnetwork #{device} #{id} #{pass}"
-  puts $?.to_i
+  system "networksetup -setairportpower #{device} on"
+  system "networksetup -setairportnetwork #{device} #{id} #{pass}"
 end
 
 def get_SSID(device)
@@ -77,15 +74,14 @@ def check_and_change
   end
 end
 
-def loop
-  if SSIDs.include? get_SSID(DEVICE)
+while true do
+  if `networksetup -getairportnetwork #{DEVICE}` == "You are not associated with an AirPort network.\n"
+    set_SSID(DEVICE, SSIDs[rand(2).floor], PASS)
+  elsif SSIDs.include? get_SSID(DEVICE)
     check_and_change
   end
-  sleep 10
-  loop
+  sleep 1
 end
-
-loop
 {% endhighlight %}
 
 
