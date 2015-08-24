@@ -407,7 +407,7 @@ module Rack
 - TODO-3: what "rack web server" is responsible to do.
 - TODO-4: how to debug rails framework itself
 
-# Configuring
+# How configuring is applied to your application
 
 - [RailsGuides](http://guides.rubyonrails.org/configuring.html)
 
@@ -454,21 +454,36 @@ module Rails
     class Configuration < ::Rails::Engine::Configuration
       attr_accessor ..., :cache_classes, :filter_parameters, :time_zone, ...
       def initialize(*)
-        super
-        @filter_parameters = []
+        super  # no biggie
+        @filter_parameters = []    # default value of examples named above
         @time_zone         = "UTC"
+        
+      def paths
+        @paths ||= begin
+          paths = super
 ...
   class Engine
     class Configuration < ::Rails::Railtie::Configuration
-      ... attr_writer :middleware, ...
-      def initialize(root=nil)
-        super() ...
-        @root = root
+      def initialize ...
+      def paths
+        @paths ||= begin
+          paths = Rails::Paths::Root.new(@root)
+          paths.add "config/environments", glob: "#{Rails.env}.rb"
+          paths.add "config/initializers", glob: "**/*.rb"
 ...
   class Railtie
     class Configuration
-      def initialize
-        @@options ||= {}
+      def initialize ...
+
+ # paths management utility
+module Rails
+  module Paths
+    class Root
+      def add(path, options = {})
+        ... @root[path] = Path.new(self, path, with, options)
+    class Path
+      def existent  # expands glob and returns files which exist
+        expanded.select { |f| File.exist?(f) } 
 
 {% endhighlight %}
 
@@ -481,8 +496,6 @@ The comments in the automatically generated file `config/application.rb` says:
 Here, "take orecedence over" means just "overwrite"
 because of the execution order of relevant files.
 
-(TODO) (A) -> (B) -> (C) or (A) -> (C) -> (B)
-
 Let's get into how these initialization order is realized
 through the whole rails application initialization process.
 
@@ -490,32 +503,31 @@ through the whole rails application initialization process.
 - (B), (C): `initializers_chain` in `Rails.application.initialize!` (see <a href="">here</a>)
 
 {% highlight ruby %}
- # (B) `config/environments/*.rb`, (C) `config/initializers/*.rb`
+ 
 module Rails
   class Engine
-    # corresponds to `Rails::Initializable::ClassMethods#initializer`
+    # run `Rails::Initializable::ClassMethods#initializer`
+    
+    # (B) `config/environments/*.rb`
     initializer :load_environment_config, ... do
       paths["config/environments"].existent.each do |environment|
+      # `Rails::Application#config.paths`
         require environment
-
+        
+    # (C) `config/initializers/*.rb`
     initializer :load_config_initializers do
       config.paths["config/initializers"].existent.sort.each do |initializer|
+      #`Rails::Engine#paths` `delegate`s to `Rails::Engine#config.paths`,
+      # which means `Rails::Application#config.paths`
         load_config_initializer(initializer)
-...
-    class Configuration < ::Rails::Railtie::Configuration
-      def paths
-        @paths ||= begin
-          paths = Rails::Paths::Root.new(@root)
-          paths.add "config/environments", glob: "#{Rails.env}.rb"
-          paths.add "config/initializers", glob: "**/*.rb"
-...
-  module Paths
-    class Root
-      def add(path, options = {})
-        ... @root[path] = Path.new(self, path, with, options)
-    class Path
-      def existent  # expands glob and returns files which exist
-        expanded.select { |f| File.exist?(f) } 
+        # `Rails::Engine#load_config_initializer`
+        
+    delegate ..., :paths, to: :config
+
+    def load_config_initializer(initializer)
+      ActiveSupport::Notifications.instrument('load_config_initializer.railties',
+                                               initializer: initializer) do
+        load(initializer)
 
 {% endhighlight %}
 
@@ -524,26 +536,23 @@ in the context of `Rails.application` since `Initializer#bind` sets
 `@context = Rails.application` and `Initializer#run` the blocks via `@context.instance_exec`
 (see the walkthrough <a href="#tocAnchor-1-2-4">above</a>).
 
-- TODO:
-  - `Rails.application.paths`
-  - `Rails.application.config.paths`
-  - `Rails.application.load_config_initializer`
-  - hash arguments (like `Initializer.new`).
-
-
-# Routing
-
-- [RailsCast 231](http://railscasts.com/episodes/231-routing-walkthrough)
+- TODO-5:
+  - see [`ActiveSupport::Notifications.instrument`](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html).
+    - I don't understand what's happening via this method, I'm outta here ...
+  - then finally we saw that (A) -> (B) -> (C) or (A) -> (C) -> (B) ?
 
 # Request to Response
 
 - [Part 1](http://andrewberls.com/blog/post/rails-from-request-to-response-part-1--introduction),
-  [Part 2](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)
+- [Part 2](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)
+
+- [RailsCast 231](http://railscasts.com/episodes/231-routing-walkthrough)
 
 
 # Active Support
 
 - [`#delegate`](http://apidock.com/rails/Module/delegate),
+  [`ActiveSupport::Notifications.instrument`](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)  
 
 # Bundler
 
