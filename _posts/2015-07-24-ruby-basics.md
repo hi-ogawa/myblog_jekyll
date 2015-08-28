@@ -6,6 +6,22 @@ category: [tips]
 tags: []
 ---
 
+# rails: the choice of database
+
+- [SQLite vs MySQL vs PostgreSQL (Degital Ocean)](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)
+- [stackoverflow](http://stackoverflow.com/questions/11622070/which-database-is-recommended-to-use-with-ruby-on-rails-considering-hosting-of)
+- <http://tenmiles.com/blog/2010/08/rails-database-default-alternatives/>
+- <https://www.ruby-forum.com/topic/127682>
+
+- MySQL setup
+  - <https://gorails.com/setup/osx/10.10-yosemite>
+  - <https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04>
+  - <https://www.digitalocean.com/community/tutorials/scaling-ruby-on-rails-setting-up-a-dedicated-mysql-server-part-2>
+  - <http://www.tutorialspoint.com/ruby-on-rails/rails-database-setup.htm>
+  - cannot set default value to `text` type
+    - but, that can be done via active record callback: <http://stackoverflow.com/questions/1550688/how-do-i-create-a-default-value-for-attributes-in-rails-activerecords-model/4576026#4576026>
+
+
 # Overall reference
 
 - [WikiBooks](https://en.wikibooks.org/wiki/Ruby_Programming)
@@ -42,7 +58,27 @@ tags: []
 - cson <https://github.com/bevry/cson>
 - <http://spacetelescope.github.io/understanding-json-schema/>
 
+# Rspec
+
+- matcher list <https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers>
+- sample of model rspec <https://gist.github.com/kyletcarlson/6234923>
+
+# Database
+
+- arguments for `column`: <http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-column-label-Examples>
+- what is `add_index` and how (or where, who) `unique` column works
+
 # Rails
+
+- change email to username in devise
+  - <https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address>
+  - <http://stackoverflow.com/questions/10866667/devise-authenticating-with-username-instead-of-email>
+  - <http://alexvpopov.github.io/blog/2013/10/31/allow-users-to-authenticate-with-username-only-using-devise-activeadmin-rails-4-and-ruby-2/>
+
+- filtering models
+  - native: 7.6 of <http://apionrails.icalialabs.com/book/chapter_seven>
+  - gem: <https://github.com/activerecord-hackery/ransack>
+  - <http://guides.rubyonrails.org/active_record_querying.html#passing-in-arguments>
 
 - model
   - not allow `nil` but `""`: <http://stackoverflow.com/questions/12395743/rails-3-how-do-i-validate-to-allow-blanks-but-not-nil-null-in-database>

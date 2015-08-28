@@ -543,11 +543,25 @@ in the context of `Rails.application` since `Initializer#bind` sets
 
 # Request to Response
 
-- [Part 1](http://andrewberls.com/blog/post/rails-from-request-to-response-part-1--introduction),
-- [Part 2](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)
+- <http://andrewberls.com/blog>
+  - [Part 1](http://andrewberls.com/blog/post/rails-from-request-to-response-part-1--introduction),
+    - from rack web server to the entry point of rack app 
+  - [Part 2](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)
+    - middleware `MyApp::Application.routes` to ...
+  - [Part 3](http://andrewberls.com/blog/post/rails-from-request-to-response-part-3--actioncontroller)
+    - action controller
 
-- [RailsCast 231](http://railscasts.com/episodes/231-routing-walkthrough)
+- [RailsCast](http://railscasts.com/)
+  - [#231](http://railscasts.com/episodes/231-routing-walkthrough)
+    - `Rails.application.routes.draw` makes `ActionDispatch::Routing::RouteSet@set`
+  - [#232](http://railscasts.com/episodes/232-routing-walkthrough-part-2)
+    - some other DSL (`get`, `resources`, `collection` ...)
+  - [#395](http://railscasts.com/episodes/395-action-controller-walkthrough)
+    - action controller
 
+- TODO:
+  - what triggers reading `routes.rb` ?
+  - what is the type of `@set`
 
 # Active Support
 

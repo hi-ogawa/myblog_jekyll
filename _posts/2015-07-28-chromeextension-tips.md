@@ -6,6 +6,11 @@ category: [tips]
 tags: []
 ---
 
+# use underscore template
+
+- <http://stackoverflow.com/questions/8807437/underscore-js-template-causes-error-from-chrome-extension>
+- <https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-eval>
+
 # where to save authentiction token on the client side
 
 - <http://security.stackexchange.com/questions/80727/best-place-to-store-authentication-tokens-client-side>
