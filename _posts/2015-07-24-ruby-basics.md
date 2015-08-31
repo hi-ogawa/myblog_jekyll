@@ -6,6 +6,49 @@ category: [tips]
 tags: []
 ---
 
+# how to tell where methods come from
+
+Coming across with an error, I need to find the cause as we all do.
+Sometimes I'm too lazy to put the method name in to google search box.
+This is the way I found somehow feeling confortable to check who is a bad guy.
+
+In my case, I want to know about `fixture_file_upload` which causes an error
+while `rake db:setup`.
+
+{% highlight ruby %}
+ # in `rails c`
+irb(main)> method(:fixture_file_upload).owner  # or method("fixture_file_upload")
+=> ActionDispatch::TestProcess
+irb(main)> method(:fixture_file_upload).source_location
+=> ["/Users/hiogawa/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/testing/test_process.rb", 37]
+ # I found the `Rack::Test::UploadedFile.new` is called. This is what I did next.
+irb(main):016:0> Rack::Test::UploadedFile.methods(false)
+=> []
+irb(main):017:0> Rack::Test::UploadedFile.instance_methods(false)
+=> [:original_filename, :tempfile, :content_type, :content_type=, :path, :local_path, :method_missing, :respond_to?]
+irb(main):018:0> Rack::Test::UploadedFile.instance_method(:original_filename)
+=> #<UnboundMethod: Rack::Test::UploadedFile#original_filename>
+irb(main):019:0> Rack::Test::UploadedFile.instance_method(:original_filename).source_location
+=> ["/Users/hiogawa/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-test-0.6.3/lib/rack/test/uploaded_file.rb", 15]
+irb(main)> Rack::Test::UploadedFile.instance_method(:original_filename).source_location
+
+ # then, I naturally wanted to know who `method` is.
+irb(main)> method(:method).owner
+=> Kernel
+ # and Kernel is included by Object as seen this.
+irb(main)> Object.ancestors
+=> [Object, Kernel, BasicObject]
+{% endhighlight %}
+
+
+
+- [stackoverflow](http://stackoverflow.com/questions/175655/how-to-find-where-a-method-is-defined-at-runtime),
+  [stackoverflow](http://stackoverflow.com/questions/7158977/finding-out-where-methods-are-defined-in-ruby-rails-as-opposed-to-java)
+  [`Method#owner`](http://ruby-doc.org/core-2.1.2/Method.html#method-i-owner),
+  [`Method#source_location`](http://ruby-doc.org/core-2.1.2/Method.html#method-i-source_location)
+- <http://jeromedalbert.com/a-diagram-of-the-ruby-core-object-model/>
+  <https://gist.github.com/wtaysom/1236979>
+
 # rails: the choice of database
 
 - [SQLite vs MySQL vs PostgreSQL (Degital Ocean)](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)

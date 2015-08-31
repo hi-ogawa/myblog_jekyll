@@ -40,6 +40,8 @@ I call all of these hobbies "learning english".
 - Opening sentence
   - <http://www.businesswritingblog.com/business_writing/2012/07/opening-sentences-for-global-email.html>
   - <http://blog.harwardcommunications.com/2012/11/06/how-to-start-emails/>
+- closing sentence
+  - <http://www.targettraining.eu/writing-emails-20-ways-for-closing-an-email/>
 
 ## Recruit
 
